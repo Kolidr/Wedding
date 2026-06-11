@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#181c24">
+<meta name="description" content="Свадебный бюджет и контроль подрядчиков">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<title>Свадьба 05.09.2026</title>
+<style>:root{--gold:#d9bd6e;--gold-light:#ecd693;--gold-dim:rgba(217,189,110,0.16);--bg:#181c24;--bg2:#1f2530;--bg3:#28303d;--text:#e8ebf0;--text2:#97a0b2;--text3:#5f6878;--green:#8fcfa8;--yellow:#e6c878;--red:#e2917f;--blue:#9bc4e8;--purple:#c2a8e0;--radius:14px;--safe-bottom:env(safe-area-inset-bottom,20px)}*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}html,body{height:100%;background:var(--bg);color:var(--text);font-family:'Georgia','Times New Roman',serif;overflow-x:hidden}svg{display:block}.header{background:linear-gradient(180deg,#232a36 0%,var(--bg) 100%);padding:calc(12px + env(safe-area-inset-top,0px)) 20px 10px;border-bottom:1px solid rgba(217,189,110,0.15)}.header-top{display:flex;justify-content:space-between;align-items:flex-start}.header-label{font-size:9px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:3px}.header-title{font-size:18px;color:var(--text);letter-spacing:0.5px}.header-sub{font-size:11px;color:var(--text3);margin-top:2px}.days-block{text-align:right}.days-num{font-size:28px;font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums;line-height:1}.days-label{font-size:8px;letter-spacing:2px;color:var(--text3);text-transform:uppercase}.tabs{display:flex;border-bottom:1px solid rgba(217,189,110,0.12);background:var(--bg);position:sticky;top:0;z-index:30;padding-top:env(safe-area-inset-top,0px)}.tab{flex:1;display:flex;align-items:center;justify-content:center;gap:6px;background:none;border:none;border-bottom:2px solid transparent;color:var(--text3);cursor:pointer;padding:11px 4px;font-size:11px;letter-spacing:0.5px;font-family:inherit;transition:all 0.2s}.tab.active{color:var(--gold);border-bottom-color:var(--gold)}.content{padding:14px 16px 100px;max-width:600px;margin:0 auto}.kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:16px}.kpi-card{background:var(--bg2);border:1px solid rgba(217,189,110,0.12);border-radius:var(--radius);padding:14px;border-top:2px solid var(--gold)}.kpi-card.green{border-top-color:var(--green)}.kpi-card.blue{border-top-color:var(--blue)}.kpi-card.yellow{border-top-color:var(--yellow)}.kpi-card.red{border-top-color:var(--red)}.kpi-card.purple{border-top-color:var(--purple)}.kpi-card.wide{grid-column:span 2}.kpi-label{font-size:9px;letter-spacing:1.5px;color:var(--text3);text-transform:uppercase;margin-bottom:6px;display:flex;align-items:center;gap:5px}.kpi-value{font-size:19px;font-weight:700;color:var(--gold);font-variant-numeric:tabular-nums}.kpi-card.green .kpi-value{color:var(--green)}.kpi-card.blue .kpi-value{color:var(--blue)}.kpi-card.yellow .kpi-value{color:var(--yellow)}.kpi-card.red .kpi-value{color:var(--red)}.kpi-card.purple .kpi-value{color:var(--purple)}.kpi-sub{font-size:10px;color:var(--text3);margin-top:4px;display:flex;align-items:center;gap:4px}.prog-block{background:var(--bg2);border:1px solid rgba(217,189,110,0.1);border-radius:var(--radius);padding:16px;margin-bottom:16px}.prog-title{font-size:9px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}.prog-row{margin-bottom:12px}.prog-info{display:flex;justify-content:space-between;margin-bottom:5px}.prog-name{font-size:11px;color:var(--text2)}.prog-pct{font-size:11px;font-variant-numeric:tabular-nums}.prog-bar{height:5px;background:rgba(255,255,255,0.07);border-radius:3px;overflow:hidden}.prog-fill{height:100%;border-radius:3px;transition:width 0.6s ease}.section-head{font-size:9px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin:18px 0 10px}.cat-line{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:10px;margin-bottom:8px}.cat-line-left{display:flex;align-items:center;gap:10px}.contractor-card{background:var(--bg2);border-radius:var(--radius);margin-bottom:10px;overflow:hidden;cursor:pointer;transition:opacity 0.15s;border:1px solid rgba(217,189,110,0.08)}.contractor-card.committed{border-left:3px solid var(--yellow)}.contractor-card.all-paid{border-left:3px solid var(--green)}.contractor-card.only-planned{border-left:3px solid rgba(95,104,120,0.6)}.contractor-card.gift{border-left:3px solid var(--purple)}.contractor-card.cancelled{border-left:3px solid var(--red);opacity:0.45}.contractor-card:active{opacity:0.8}.card-header{display:flex;align-items:center;padding:14px 16px;gap:12px}.card-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0}.card-meta{flex:1;min-width:0}.card-name{font-size:14px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.card-cat{font-size:10px;color:var(--text3);margin-top:2px}.card-right{text-align:right;flex-shrink:0;display:flex;flex-direction:column;align-items:flex-end}.card-amount{font-size:16px;font-variant-numeric:tabular-nums;font-weight:700}.card-amount-sub{font-size:10px;margin-top:2px;font-variant-numeric:tabular-nums;display:flex;align-items:center;gap:3px}.card-chevron{margin-top:4px}.status-badge{display:inline-flex;align-items:center;gap:4px;font-size:9px;letter-spacing:0.5px;padding:2px 8px;border-radius:20px;margin-top:4px}.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.78);z-index:100;display:flex;align-items:flex-end;opacity:0;pointer-events:none;transition:opacity 0.25s}.modal-overlay.open{opacity:1;pointer-events:all}.modal{background:var(--bg2);border-radius:20px 20px 0 0;padding:0 0 calc(20px + var(--safe-bottom));width:100%;max-height:90vh;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;transform:translateY(40px);transition:transform 0.28s cubic-bezier(0.34,1.3,0.64,1);border-top:1px solid rgba(217,189,110,0.2)}.modal.dragging{transition:none}.modal-overlay.open .modal{transform:translateY(0)}.modal-grab{padding:10px 0 4px;cursor:grab;touch-action:none}.modal-handle{width:40px;height:5px;background:rgba(255,255,255,0.22);border-radius:3px;margin:0 auto}.modal-header{padding:16px 20px;border-bottom:1px solid rgba(255,255,255,0.06);display:flex;align-items:center;gap:12px}.modal-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;background:rgba(217,189,110,0.15)}.modal-title-block{flex:1}.modal-cat{font-size:11px;color:var(--text3);margin-top:2px}.modal-body{padding:16px 20px}.field-group{margin-bottom:14px}.field-label{font-size:9px;letter-spacing:1.5px;color:var(--text3);text-transform:uppercase;margin-bottom:6px;display:block}.field-input{width:100%;background:var(--bg3);border:1px solid rgba(217,189,110,0.15);border-radius:10px;padding:11px 14px;color:var(--text);font-size:15px;font-family:inherit;outline:none;-webkit-appearance:none}.field-input:focus{border-color:var(--gold)}.field-input.mono{font-variant-numeric:tabular-nums}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}select.field-input{background-image:none}.status-row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}.status-btn{flex:1 1 calc(50% - 4px);min-width:calc(50% - 4px);border:1px solid transparent;border-radius:10px;padding:10px 4px;font-size:11px;cursor:pointer;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:inherit;transition:all 0.15s;background:var(--bg3);color:var(--text3)}.status-btn.sel-paid{background:rgba(143,207,168,0.18);color:var(--green);border-color:rgba(143,207,168,0.4)}.status-btn.sel-booked{background:rgba(230,200,120,0.18);color:var(--yellow);border-color:rgba(230,200,120,0.4)}.status-btn.sel-planned{background:rgba(95,104,120,0.3);color:var(--text2);border-color:rgba(95,104,120,0.5)}.status-btn.sel-cancelled{background:rgba(226,145,127,0.18);color:var(--red);border-color:rgba(226,145,127,0.4)}.amounts-summary{background:var(--bg3);border-radius:12px;padding:14px;margin-bottom:16px}.amt-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05)}.amt-row:last-child{border-bottom:none;padding-bottom:0}.amt-label{font-size:12px;color:var(--text2)}.amt-val{font-size:13px;font-variant-numeric:tabular-nums;font-weight:700}.btn-primary{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);border:none;border-radius:12px;padding:14px;color:#181c24;font-size:15px;font-weight:700;cursor:pointer;font-family:inherit;margin-bottom:10px}.btn-secondary{width:100%;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:12px;color:var(--text2);font-size:14px;cursor:pointer;font-family:inherit;margin-bottom:8px}.btn-danger{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:rgba(226,145,127,0.12);border:1px solid rgba(226,145,127,0.3);border-radius:12px;padding:12px;color:var(--red);font-size:14px;cursor:pointer;font-family:inherit}.fab{position:fixed;bottom:calc(20px + var(--safe-bottom));right:20px;width:52px;height:52px;border-radius:50%;background:var(--gold);border:none;cursor:pointer;box-shadow:0 4px 20px rgba(217,189,110,0.4);z-index:50;display:flex;align-items:center;justify-content:center}.savings-card{background:var(--bg2);border:1px solid rgba(217,189,110,0.12);border-radius:var(--radius);padding:18px;margin-bottom:12px}.savings-title{font-size:9px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}.sav-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.05)}.sav-row:last-child{border-bottom:none}.sav-label{font-size:13px;color:var(--text2)}.sav-val{font-size:16px;font-variant-numeric:tabular-nums;font-weight:700}.sav-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;display:inline-block}.sav-input-row{display:flex;gap:6px;align-items:center}.sav-edit-btn{background:rgba(217,189,110,0.15);border:none;border-radius:6px;padding:6px 9px;color:var(--gold);cursor:pointer;font-size:12px;white-space:nowrap;display:flex;align-items:center}.monthly-hero{text-align:center;padding:20px 0 8px}.monthly-label{font-size:9px;letter-spacing:2px;color:var(--text3);text-transform:uppercase;margin-bottom:6px}.monthly-amount{font-size:36px;font-weight:700;font-variant-numeric:tabular-nums}.monthly-sub{font-size:11px;color:var(--text3);margin-top:6px}.need-block{background:var(--bg3);border-radius:12px;padding:14px 16px;margin-bottom:14px}.need-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid rgba(255,255,255,0.05)}.need-row:last-child{border-bottom:none}.need-label{font-size:12px;color:var(--text2);display:flex;align-items:center;gap:5px}.need-val{font-size:13px;font-variant-numeric:tabular-nums;font-weight:700}.name-edit-input{background:transparent;border:none;border-bottom:1px dashed var(--gold);color:var(--text);font-size:17px;font-family:inherit;outline:none;width:100%;padding:2px 0}.cat-filter{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}.cat-filter::-webkit-scrollbar{display:none}.cat-chip{flex-shrink:0;background:var(--bg2);border:1px solid rgba(217,189,110,0.15);border-radius:20px;padding:5px 14px;font-size:11px;color:var(--text3);cursor:pointer;font-family:inherit;white-space:nowrap}.cat-chip.active{background:var(--gold-dim);color:var(--gold);border-color:rgba(217,189,110,0.4)}.divider{height:1px;background:rgba(255,255,255,0.05);margin:6px 0 14px}.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%);background:var(--green);color:#181c24;padding:10px 22px;border-radius:20px;font-size:13px;font-weight:700;z-index:200;opacity:0;transition:opacity 0.3s;pointer-events:none;white-space:nowrap}.toast.show{opacity:1}.empty{text-align:center;padding:40px 20px;color:var(--text3);font-size:13px}.legend{display:flex;gap:14px;margin:12px 0;flex-wrap:wrap}.legend-item{display:flex;align-items:center;gap:5px;font-size:10px;color:var(--text3)}.legend-stripe{width:10px;height:16px;border-radius:2px;flex-shrink:0}.icon-btn{display:flex;align-items:center;justify-content:center}</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-top">
+    <div>
+      <div class="header-label">Свадебный бюджет</div>
+      <div class="header-title">Роман &amp; Елизавета</div>
+      <div class="header-sub">5 сентября 2026 · Иркутск</div>
+    </div>
+    <div class="days-block">
+      <div class="days-num" id="daysCount">—</div>
+      <div class="days-label">дней</div>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab active" id="tab0" onclick="switchTab('dashboard')"></button>
+  <button class="tab" id="tab1" onclick="switchTab('contractors')"></button>
+  <button class="tab" id="tab2" onclick="switchTab('savings')"></button>
+</div>
+
+<div class="content" id="content"></div>
+<button class="fab" id="fabBtn" onclick="openAddModal()"></button>
+
+<div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
+  <div class="modal" id="modal">
+    <div class="modal-grab" id="modalGrab"><div class="modal-handle"></div></div>
+    <div class="modal-header">
+      <div class="modal-icon" id="mIcon"></div>
+      <div class="modal-title-block">
+        <input class="name-edit-input" id="mTitleInput" type="text" placeholder="Название">
+        <div class="modal-cat" id="mCat"></div>
+      </div>
+    </div>
+    <div class="modal-body" id="mBody"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const WEDDING_DATE = new Date('2026-09-05');
+// порядок сортировки статей: забронировано, запланировано, оплачено, подарок, отменено
+function statusRank(c){
+  if(c.isGift) return 3;
+  if(c.status==='cancelled') return 4;
+  if(c.status==='booked') return 0;
+  if(c.status==='planned') return 1;
+  if(c.status==='paid') return 2;
+  return 1;
+}
+// порядок сортировки категорий: требует выбора, частично, забронировано, оплачено
+function catStatusRank(cs){ return {needs:0,partial:1,booked:2,paid:3,gifts:4}[cs]; }
+const PAYDAYS=[10,25]; // числа поступления зарплаты, по 50%
+// считает количество будущих поступлений и эквивалент в «месяцах» (по 2 поступления = 1 месяц)
+// до даты свадьбы, начиная с «эффективной» даты (today либо later если уже изменены накопления)
+function calcPaySchedule(fromDate, toDate){
+  let events=0;
+  const cur=new Date(fromDate.getFullYear(),fromDate.getMonth(),fromDate.getDate());
+  const end=new Date(toDate.getFullYear(),toDate.getMonth(),toDate.getDate());
+  let y=cur.getFullYear(), m=cur.getMonth();
+  // идём по месяцам, считаем дни выплат строго ПОСЛЕ текущего дня и СТРОГО ДО свадьбы
+  while(true){
+    for(const pd of PAYDAYS){
+      const d=new Date(y,m,pd);
+      if(d>cur && d<end) events++;
+    }
+    if(y===end.getFullYear() && m===end.getMonth()) break;
+    m++; if(m>11){m=0;y++;}
+    if(y>end.getFullYear()+2) break; // страховка
+  }
+  const monthsEq=events/2; // 2 поступления = полный месяц
+  return {events, monthsEq};
+}
+
+// ── SVG ICON SYSTEM ───────────────────────────────────────
+// единый набор тонких линейных иконок; цвет наследуется через currentColor
+function svg(path, size){
+  size=size||20;
+  return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${path}</svg>`;
+}
+const ICON_PATHS = {
+  venue:     '<path d="M3 21h18M5 21V10l7-5 7 5v11M9 21v-5h6v5"/>',
+  photo:     '<rect x="3" y="6" width="18" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/>',
+  music:     '<circle cx="6" cy="18" r="2.5"/><circle cx="17" cy="16" r="2.5"/><path d="M8.5 18V6l11-2v12"/>',
+  bride:     '<path d="M12 3v6M9 6h6M7 21c0-4 2-7 5-7s5 3 5 7"/><circle cx="12" cy="11" r="0.5"/>',
+  groom:     '<path d="M8 21V9l4-3 4 3v12M8 9l4 4 4-4M11 21v-4h2v4"/>',
+  decor:     '<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/>',
+  cake:      '<path d="M4 21h16v-7H4zM4 14c1.5-2 2.5-2 4 0s2.5 2 4 0 2.5-2 4 0 2.5 2 4 0M12 7V4M12 4l-1.5 1M12 4l1.5 1"/>',
+  transport: '<path d="M5 17h14M6 17v2M18 17v2M4 17l1.5-6h13L20 17M7 11l1-4h8l1 4"/><circle cx="8" cy="14" r="0.5"/><circle cx="16" cy="14" r="0.5"/>',
+  print:     '<path d="M3 7l9 6 9-6M3 7v10h18V7l-9-6z"/>',
+  alcohol:   '<path d="M8 3h8l-1 6a3 3 0 01-6 0zM12 12v6M9 21h6"/>',
+  video:     '<rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/>',
+  reserve:   '<path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/>',
+  gift:      '<rect x="4" y="11" width="16" height="9" rx="1"/><path d="M3 7h18v4H3zM12 7v13M12 7c-1-3-3-4-4-3s0 3 4 3M12 7c1-3 3-4 4-3s0 3-4 3"/>',
+  pin:       '<path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+  // status & ui
+  lock:      '<rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/>',
+  warn:      '<path d="M12 3l9 16H3z"/><path d="M12 9v5M12 17v.5"/>',
+  check:     '<path d="M5 13l4 4 10-11"/>',
+  chevron:   '<path d="M6 9l6 6 6-6"/>',
+  edit:      '<path d="M4 20h4l11-11-4-4L4 16z"/>',
+  close:     '<path d="M6 6l12 12M18 6L6 18"/>',
+  plus:      '<path d="M12 5v14M5 12h14"/>',
+  list:      '<path d="M8 6h13M8 12h13M8 18h13M3 6h.5M3 12h.5M3 18h.5"/>',
+  wallet:    '<path d="M3 7h16a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2zM3 7l2-3h12M17 13h.5"/>',
+  chart:     '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  source:    '<circle cx="12" cy="8" r="4"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/>',
+  // extra pickable icons
+  rings:     '<circle cx="8.5" cy="14" r="5"/><circle cx="15.5" cy="14" r="5"/><path d="M8.5 9l1.5-4h4l1.5 4"/>',
+  heart:     '<path d="M12 20s-7-4.5-9.5-9C1 8 2.5 4.5 6 4.5c2 0 3 1 4 2.5 1-1.5 2-2.5 4-2.5 3.5 0 5 3.5 3.5 6.5C19 15.5 12 20 12 20z"/>',
+  flower:    '<circle cx="12" cy="12" r="2.5"/><path d="M12 9.5C12 6 13.5 4 12 4s0 2 0 5.5M12 14.5c0 3.5-1.5 5.5 0 5.5s0-2 0-5.5M9.5 12C6 12 4 10.5 4 12s2 0 5.5 0M14.5 12c3.5 0 5.5 1.5 5.5 0s-2 0-5.5 0"/>',
+  star:      '<path d="M12 3l2.5 6 6.5.5-5 4.5L17.5 21 12 17.5 6.5 21 8 14 3 9.5l6.5-.5z"/>',
+  car:       '<path d="M5 17h14M6 17v2M18 17v2M4 17l1.5-6h13L20 17M7 11l1-4h8l1 4"/><circle cx="8" cy="14" r="0.5"/><circle cx="16" cy="14" r="0.5"/>',
+  food:      '<path d="M6 3v8a2 2 0 004 0V3M8 3v18M16 3c-1.5 0-2.5 2-2.5 5s1 4 2.5 4 2.5-1 2.5-4S17.5 3 16 3zM16 12v9"/>',
+  hotel:     '<path d="M3 20V8l9-5 9 5v12M9 20v-6h6v6M3 20h18"/>',
+  dress:     '<path d="M9 3l3 3 3-3M9 3l-1 5 4 3 4-3-1-5M8 8l-3 13h14L16 8"/>',
+  light:     '<path d="M9 18h6M10 21h4M12 3a6 6 0 00-4 10c1 1 1.5 2 1.5 3h5c0-1 .5-2 1.5-3a6 6 0 00-4-10z"/>',
+  ticket:    '<path d="M3 8a2 2 0 002-2h14a2 2 0 002 2 2 2 0 000 4 2 2 0 00-2 2H5a2 2 0 00-2-2 2 2 0 000-4z"/><path d="M12 6v12" stroke-dasharray="2 2"/>',
+  cash:      '<rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/>',
+  card:      '<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/>',
+  pig:       '<path d="M4 13a6 5 0 1112 0 6 5 0 01-12 0zM16 10l3-1v4M6 18v2M14 18v2M9 9c0-2 1-3 3-3"/><circle cx="8" cy="12" r="0.5"/>',
+};
+function ic(name, size, color){
+  const p=ICON_PATHS[name]||ICON_PATHS.pin;
+  const wrap=svg(p,size);
+  return color?`<span style="color:${color};display:inline-flex">${wrap}</span>`:wrap;
+}
+
+// категория → имя иконки (база по умолчанию)
+const CAT_ICON = {
+  'Площадка':'venue','Фото':'photo','Ведущий + DJ':'music','Образ невесты':'bride',
+  'Образ жениха':'groom','Декор':'decor','Торт':'cake','Трансфер':'transport',
+  'Полиграфия':'print','Алкоголь':'alcohol','Видео':'video','Резерв':'reserve','Другое':'pin'
+};
+// иконки, доступные для выбора вручную
+const PICKABLE_ICONS = ['venue','photo','music','bride','groom','decor','cake','transport','print','alcohol','video','reserve','gift','rings','heart','flower','star','car','food','hotel','dress','light','ticket','cash','card','pig','source','pin'];
+function catIcon(cat){
+  // приоритет: ручной выбор пользователя → база по умолчанию → pin
+  if(state.catIcons && state.catIcons[cat]) return state.catIcons[cat];
+  return CAT_ICON[cat]||'pin';
+}
+
+const STATUS = {
+  paid:      {label:'Оплачено',      color:'#8fcfa8',bg:'rgba(143,207,168,0.15)', cls:'sel-paid'},
+  booked:    {label:'Забронировано', color:'#e6c878',bg:'rgba(230,200,120,0.15)', cls:'sel-booked'},
+  planned:   {label:'Планируется',   color:'#97a0b2',bg:'rgba(95,104,120,0.2)',   cls:'sel-planned'},
+  cancelled: {label:'Отменено',      color:'#e2917f',bg:'rgba(226,145,127,0.15)',cls:'sel-cancelled'},
+};
+const SAVINGS_COLORS=['#8fcfa8','#9bc4e8','#c2a8e0','#e6c878','#e2917f','#86c8d8','#aed99a','#e0a8c8'];
+
+const DEFAULT_DATA = {
+  contractors: [
+    {id:1, cat:'Площадка',     name:'Ресторан',              status:'booked', planned:120000,total:120000,paid:30000, contact:'',notes:'Забронирован',date:'05.09.2026',isGift:false},
+    {id:2, cat:'Фото',         name:'Фотограф',              status:'booked', planned:60000, total:60000, paid:15000, contact:'',notes:'Забронирован',date:'05.09.2026',isGift:false},
+    {id:3, cat:'Ведущий + DJ', name:'Ведущий + DJ',          status:'booked', planned:50000, total:50000, paid:10000, contact:'',notes:'Совмещён',     date:'05.09.2026',isGift:false},
+    {id:4, cat:'Образ невесты',name:'Платье невесты',        status:'paid',   planned:45000, total:45000, paid:45000, contact:'',notes:'Оплачено',     date:'',isGift:false},
+    {id:5, cat:'Декор',        name:'Декор и флористика',    status:'planned',planned:80000, total:0,     paid:0,     contact:'',notes:'',             date:'',isGift:false},
+    {id:6, cat:'Торт',         name:'Свадебный торт',        status:'planned',planned:20000, total:0,     paid:0,     contact:'',notes:'',             date:'',isGift:false},
+    {id:7, cat:'Трансфер',     name:'Авто / трансфер',       status:'planned',planned:25000, total:0,     paid:0,     contact:'',notes:'',             date:'',isGift:false},
+    {id:8, cat:'Полиграфия',   name:'Приглашения',           status:'planned',planned:12000, total:0,     paid:0,     contact:'',notes:'',             date:'',isGift:false},
+    {id:9, cat:'Образ невесты',name:'Стилист / макияж',      status:'planned',planned:15000, total:0,     paid:0,     contact:'',notes:'',             date:'',isGift:false},
+    {id:10,cat:'Образ жениха', name:'Костюм жениха',         status:'planned',planned:25000, total:0,     paid:0,     contact:'',notes:'',             date:'',isGift:false},
+    {id:11,cat:'Образ жениха', name:'Туфли жениха',          status:'planned',planned:8000,  total:0,     paid:0,     contact:'',notes:'',             date:'',isGift:false},
+    {id:12,cat:'Образ невесты',name:'Туфли невесты',         status:'planned',planned:10000, total:0,     paid:0,     contact:'',notes:'',             date:'',isGift:false},
+    {id:13,cat:'Алкоголь',     name:'Алкоголь и напитки',    status:'planned',planned:35000, total:0,     paid:0,     contact:'',notes:'',             date:'',isGift:false},
+    {id:14,cat:'Видео',        name:'Видеограф',             status:'planned',planned:40000, total:0,     paid:0,     contact:'',notes:'',             date:'',isGift:false},
+    {id:15,cat:'Резерв',       name:'Непредвиденные расходы',status:'planned',planned:50000, total:0,     paid:0,     contact:'',notes:'Резерв ~7%',  date:'',isGift:false},
+  ],
+  savingsList:[
+    {id:'s1', label:'Накопительный счёт', amount:249000},
+    {id:'s2', label:'Вклад Романа',       amount:50000},
+    {id:'s3', label:'Вклад Елизаветы',    amount:50000},
+  ],
+  catIcons:{}, expandedCats:{},
+  nextSavId:4, nextId:16, tab:'dashboard', filterCat:'Все',
+};
+
+function normalizeData(d){
+  (d.contractors||[]).forEach(c=>{
+    if(typeof c.isPrepay==='undefined') c.isPrepay=(+c.paid>0&&+c.total>0&&+c.paid<+c.total);
+    if(typeof c.isGift==='undefined') c.isGift=false;
+  });
+  if(!d.catIcons)d.catIcons={};
+  if(!d.expandedCats)d.expandedCats={};
+  return d;
+}
+function load(){
+  try{
+    const d=JSON.parse(localStorage.getItem('wedding2026'));
+    if(!d) return normalizeData(clone(DEFAULT_DATA));
+    if(d.savings && !d.savingsList){
+      d.savingsList=[
+        {id:'s1',label:(d.savingsLabels&&d.savingsLabels.accumulative)||'Накопительный счёт',amount:+d.savings.accumulative||0},
+        {id:'s2',label:(d.savingsLabels&&d.savingsLabels.roman)||'Вклад Романа',amount:+d.savings.roman||0},
+        {id:'s3',label:(d.savingsLabels&&d.savingsLabels.nevesta)||'Вклад Елизаветы',amount:+d.savings.nevesta||0},
+      ];
+      d.nextSavId=4; delete d.savings; delete d.savingsLabels;
+    }
+    if(!d.savingsList) d.savingsList=clone(DEFAULT_DATA.savingsList);
+    if(!d.nextSavId) d.nextSavId=(d.savingsList.length||0)+1;
+    if(!d.contractors) d.contractors=clone(DEFAULT_DATA.contractors);
+    if(!d.catIcons) d.catIcons={};
+    if(!d.expandedCats) d.expandedCats={};
+    return normalizeData(d);
+  }catch(e){return normalizeData(clone(DEFAULT_DATA));}
+}
+function save(d){localStorage.setItem('wedding2026',JSON.stringify(d));if(typeof scheduleSync==='function')scheduleSync();}
+function clone(o){return JSON.parse(JSON.stringify(o));}
+
+let state=load();
+let modalItem=null, isNewItem=false, savModalId=null, modalMode='contractor';
+let currentTab=state.tab||'dashboard';
+
+function fmt(n){n=+n||0;if(n===0)return'—';return new Intl.NumberFormat('ru-RU',{style:'currency',currency:'RUB',maximumFractionDigits:0}).format(n);}
+function fmtZ(n){return new Intl.NumberFormat('ru-RU',{style:'currency',currency:'RUB',maximumFractionDigits:0}).format(+n||0);}
+// разделение разрядов для полей ввода
+function groupNum(v){
+  const n=(''+v).replace(/[^\d]/g,'');
+  if(!n)return'';
+  return n.replace(/\B(?=(\d{3})+(?!\d))/g,'\u00a0');
+}
+function rawNum(v){const n=(''+v).replace(/[^\d]/g,'');return n?+n:0;}
+// конвертация дат: храним «дд.мм.гггг», поле date работает с «гггг-мм-дд»
+function dmyToIso(dmy){
+  if(!dmy)return'';
+  const m=(''+dmy).match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);
+  if(!m)return'';
+  const d=m[1].padStart(2,'0'),mo=m[2].padStart(2,'0');
+  return `${m[3]}-${mo}-${d}`;
+}
+function isoToDmy(iso){
+  if(!iso)return'';
+  const m=(''+iso).match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if(!m)return'';
+  return `${m[3]}.${m[2]}.${m[1]}`;
+}
+// обработчик ввода: форматирует значение и пишет число в modalItem[field]
+function onNumInput(el,obj,field,cb){
+  const raw=rawNum(el.value);
+  obj[field]=raw;
+  const formatted=groupNum(el.value);
+  el.value=formatted;
+  // курсор в конец (на мобильных это норм; избегаем скачков каретки)
+  if(cb)cb();
+}
+
+function updateDays(){
+  const d=Math.ceil((WEDDING_DATE-new Date())/86400000);
+  const el=document.getElementById('daysCount');
+  if(d>0){el.textContent=d;}
+  else{el.innerHTML='<span style="display:inline-flex">'+ic('reserve',30)+'</span>';}
+}
+
+// ── STATS ─────────────────────────────────────────────────
+function calcStats(){
+  const c=state.contractors;
+  const active=c.filter(x=>!x.isGift && x.status!=='cancelled');
+  const realBudget=active.reduce((s,x)=>{
+    if(x.status==='booked'||x.status==='paid') return s+(+x.total||0);
+    return s+(+x.planned||0);
+  },0);
+  const planned    =active.reduce((s,x)=>s+(+x.planned||0),0);
+  const contracted =active.reduce((s,x)=>s+(+x.total||0),0);
+  // paid — только активные (без подарков и отменённых), т.к. отменённые нигде не учитываются
+  const paid=active.reduce((s,x)=>s+(+x.paid||0),0);
+  const obligatedRemaining=active.filter(x=>x.status==='booked'||x.status==='paid').reduce((s,x)=>s+(+x.total||0)-(+x.paid||0),0);
+  const plannedRemaining  =active.filter(x=>x.status==='planned').reduce((s,x)=>s+(+x.planned||0),0);
+  // totalSav — деньги на счетах (ещё не потрачены)
+  const totalSav=(state.savingsList||[]).reduce((s,x)=>s+(+x.amount||0),0);
+  const giftTotal=c.filter(x=>x.isGift&&x.status!=='cancelled').reduce((s,x)=>s+((+x.paid||0)>0?(+x.paid):(+x.planned||0)),0);
+  // накоплено + оплачено = всё что уже собрано/потрачено на свадьбу
+  const savedPlusPaid=totalSav+paid;
+  // ещё накопить = бюджет − оплачено − накоплено (оплаченное уже выведено и не лежит на счетах)
+  const deficit=Math.max(0,realBudget-paid-totalSav);
+  const freeAfterObligations=totalSav-obligatedRemaining;
+  return{planned,realBudget,contracted,paid,obligatedRemaining,plannedRemaining,totalSav,giftTotal,savedPlusPaid,deficit,freeAfterObligations};
+}
+
+function switchTab(t){
+  currentTab=t;state.tab=t;save(state);
+  document.querySelectorAll('.tab').forEach((el,i)=>el.classList.toggle('active',['dashboard','contractors','savings'][i]===t));
+  document.getElementById('fabBtn').style.display=t==='contractors'?'flex':'none';
+  render();
+}
+
+function renderTabs(){
+  document.getElementById('tab0').innerHTML=ic('chart',15)+'<span>Сводка</span>';
+  document.getElementById('tab1').innerHTML=ic('list',15)+'<span>Статьи</span>';
+  document.getElementById('tab2').innerHTML=ic('wallet',15)+'<span>Деньги</span>';
+  document.getElementById('fabBtn').innerHTML=ic('plus',24,'#181c24');
+}
+
+function render(){
+  const el=document.getElementById('content');
+  if(currentTab==='dashboard')el.innerHTML=renderDashboard();
+  else if(currentTab==='contractors')el.innerHTML=renderContractors();
+  else el.innerHTML=renderSavings();
+}
+
+// ── DASHBOARD ─────────────────────────────────────────────
+function renderDashboard(){
+  const s=calcStats();
+  const days=Math.max(1,Math.ceil((WEDDING_DATE-new Date())/86400000));
+  const months=(days/30).toFixed(1);
+  const monthly=s.deficit>0?Math.ceil(s.deficit/(days/30)):0;
+  const base=s.realBudget||1;
+  const pSav =Math.min(100,Math.round(s.totalSav/base*100));
+  const pPaid=Math.min(100,Math.round(s.paid/base*100));
+  const pCon =Math.min(100,Math.round(s.contracted/base*100));
+
+  const catMap={};
+  state.contractors.filter(c=>c.status!=='cancelled').forEach(c=>{
+    if(!catMap[c.cat])catMap[c.cat]={total:0,paid:0,obligRem:0,plannedAmt:0,giftAmt:0,hasBooked:false,allPaid:true,hasNonGift:false,items:[],nNonGift:0,nBooked:0,nPlanned:0,nPaidOrGift:0};
+    const m=catMap[c.cat];
+    if(c.isGift){
+      const gv=(+c.paid||0)>0?(+c.paid):(+c.planned||0);
+      m.giftAmt+=gv;
+      m.total+=gv;
+      m.nPaidOrGift++;
+    } else {
+      m.hasNonGift=true;
+      m.nNonGift++;
+      const isComm=(c.status==='booked'||c.status==='paid');
+      const amt=isComm?(+c.total||0):(+c.planned||0);
+      m.total+=amt;
+      m.paid+=+c.paid||0;
+      if(isComm){m.hasBooked=true;m.obligRem+=(+c.total||0)-(+c.paid||0);}
+      else{m.plannedAmt+=(+c.planned||0);}
+      if(c.status!=='paid')m.allPaid=false;
+      if(c.status==='paid')m.nPaidOrGift++;
+      else if(c.status==='booked')m.nBooked++;
+      else if(c.status==='planned')m.nPlanned++;
+    }
+    m.items.push(c);
+  });
+
+  // статус категории по п.3
+  function categoryState(d){
+    const totalItems=d.items.length;
+    if(!d.hasNonGift) return 'gifts'; // только подарки
+    // все статьи оплачены или подарены
+    if(d.nPaidOrGift===totalItems) return 'paid';
+    // все неподарочные забронированы (нет планируемых, нет неоплаченных вне брони)
+    if(d.nPlanned===0 && d.nBooked>0) return 'booked';
+    // все только планируются (ни одной брони/оплаты среди неподарочных)
+    if(d.nBooked===0 && d.nPaidOrGift===0) return 'needs';
+    // иначе — частично выполнено
+    return 'partial';
+  }
+  const CAT_STATE_META={
+    needs:  {color:'var(--text3)', bg:'rgba(95,104,120,0.18)',  label:'требует выбора'},
+    partial:{color:'var(--yellow)',bg:'rgba(230,200,120,0.13)', label:'выполнено частично'},
+    booked: {color:'var(--blue)',  bg:'rgba(155,196,232,0.13)', label:'забронировано'},
+    paid:   {color:'var(--green)', bg:'rgba(143,207,168,0.13)', label:'оплачено'},
+    gifts:  {color:'var(--purple)',bg:'rgba(194,168,224,0.12)', label:'подарки'},
+  };
+
+  const expanded=state.expandedCats||{};
+  const catEntries=Object.entries(catMap).map(([cat,d])=>{
+    const cs=categoryState(d);
+    return {cat,d,cs};
+  }).sort((a,b)=>catStatusRank(a.cs)-catStatusRank(b.cs));
+
+  const catRows=catEntries.map(({cat,d,cs})=>{
+    const onlyGifts=cs==='gifts';
+    const meta=CAT_STATE_META[cs];
+    const sc={color:meta.color,bg:meta.bg,label:meta.label};
+    const amtColor=meta.color;
+    const isOpen=!!expanded[cat];
+    const multi=d.items.length>1;
+    const sortedItems=d.items.slice().sort((a,b)=>statusRank(a)-statusRank(b));
+
+    // строки по статьям (при раскрытии)
+    const itemRows=sortedItems.map(c=>{
+      if(c.isGift){
+        const gp=(+c.paid||0)>0;
+        const gv=gp?(+c.paid):(+c.planned||0);
+        return`<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:7px 14px 7px 34px;border-top:1px solid rgba(255,255,255,0.04)">
+          <div style="font-size:12px;color:var(--text2);display:flex;align-items:center;gap:6px;min-width:0;flex:1">
+            <span style="color:var(--purple);display:inline-flex;flex-shrink:0">${ic('gift',12)}</span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${c.name}</span>
+          </div>
+          <div style="text-align:right;flex-shrink:0">
+            <div style="font-size:12px;font-variant-numeric:tabular-nums;color:var(--purple);white-space:nowrap">${gv?fmtZ(gv):'—'}</div>
+            <div style="font-size:9px;color:var(--purple);opacity:0.7;white-space:nowrap">подарок · ${gp?'оплачено':'план'}</div>
+          </div>
+        </div>`;
+      }
+      const csc=STATUS[c.status]||STATUS.planned;
+      const isComm=(c.status==='booked'||c.status==='paid');
+      const isPaid=c.status==='paid';
+      let val,lbl,col;
+      if(isPaid){val=(+c.total||+c.planned);lbl='оплачено';col='var(--green)';}
+      else if(isComm){val=(+c.total||0)-(+c.paid||0);lbl='остаток';col='var(--yellow)';}
+      else{val=(+c.planned||0);lbl='план';col='var(--text3)';}
+      return`<div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:7px 14px 7px 34px;border-top:1px solid rgba(255,255,255,0.04)">
+        <div style="font-size:12px;color:var(--text2);display:flex;align-items:center;gap:6px;min-width:0;flex:1">
+          <span style="width:6px;height:6px;border-radius:50%;background:${csc.color};display:inline-block;flex-shrink:0"></span><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${c.name}</span>
+        </div>
+        <div style="text-align:right;flex-shrink:0">
+          <div style="font-size:12px;font-variant-numeric:tabular-nums;color:${col};white-space:nowrap">${isComm&&!isPaid?'~ ':''}${fmtZ(val)}</div>
+          <div style="font-size:9px;color:${col};opacity:0.7;white-space:nowrap">${lbl}</div>
+        </div>
+      </div>`;
+    }).join('');
+
+    // раскладка сумм: отдельная полноширинная строка, чипы не рвутся внутри
+    const chip=(color,inner)=>`<span style="display:inline-flex;align-items:center;gap:4px;white-space:nowrap;font-size:10px;color:${color};background:rgba(0,0,0,0.18);border-radius:12px;padding:3px 9px;font-variant-numeric:tabular-nums">${inner}</span>`;
+    const chips=[
+      d.paid>0?chip('var(--green)','оплачено '+fmtZ(d.paid)):'',
+      d.obligRem>0?chip('var(--yellow)',ic('lock',10)+' остаток '+fmtZ(d.obligRem)):'',
+      d.plannedAmt>0?chip('var(--text2)','план ~ '+fmtZ(d.plannedAmt)):'',
+      d.giftAmt>0?chip('var(--purple)',ic('gift',10)+' подарки '+fmtZ(d.giftAmt)):'',
+    ].filter(Boolean).join('');
+    const breakdown=chips?`<div style="display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 11px">${chips}</div>`:'';
+
+    return`<div style="margin-bottom:8px;border-radius:10px;overflow:hidden;border:1px solid ${onlyGifts?'rgba(194,168,224,0.2)':sc.color+'22'};background:${sc.bg}">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 14px ${chips?'8px':'11px'};${multi?'cursor:pointer':''}" ${multi?`onclick="toggleCat('${cat.replace(/'/g,"\\'")}')"`:''}>
+        <div style="display:flex;align-items:center;gap:10px;min-width:0;flex:1">
+          <span style="color:${sc.color};display:inline-flex;flex-shrink:0">${ic(catIcon(cat),18)}</span>
+          <div style="min-width:0">
+            <div style="font-size:13px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${cat}${multi?` <span style="font-size:10px;color:var(--text3)">· ${d.items.length}</span>`:''}</div>
+            <div style="font-size:9px;color:${sc.color};margin-top:1px">${sc.label}</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+          <div style="text-align:right">
+            <div style="font-size:15px;font-variant-numeric:tabular-nums;color:${amtColor};font-weight:700;white-space:nowrap">${fmtZ(d.total)}</div>
+            <div style="font-size:9px;color:${amtColor};opacity:0.7;margin-top:1px">всего</div>
+          </div>
+          ${multi?`<span style="color:var(--text3);display:inline-flex;transform:rotate(${isOpen?'180':'0'}deg);transition:transform 0.2s">${ic('chevron',14)}</span>`:''}
+        </div>
+      </div>
+      ${breakdown}
+      ${multi&&isOpen?`<div style="background:rgba(0,0,0,0.15)">${itemRows}</div>`:''}
+    </div>`;
+  }).join('');
+
+  const freeColor=s.freeAfterObligations>=0?'var(--green)':'var(--red)';
+
+  return`
+  <div class="kpi-grid">
+    <div class="kpi-card wide">
+      <div class="kpi-label">Общий бюджет свадьбы</div>
+      <div class="kpi-value" style="font-size:24px">${fmtZ(s.realBudget)}</div>
+      <div class="kpi-sub">договорные + плановые · без подарков</div>
+    </div>
+    <div class="kpi-card wide green">
+      <div class="kpi-label">Накоплено + оплачено</div>
+      <div class="kpi-value" style="font-size:24px">${fmtZ(s.savedPlusPaid)}</div>
+      <div class="kpi-sub">${fmtZ(s.totalSav)} на счетах · ${fmtZ(s.paid)} выплачено</div>
+    </div>
+    <div class="kpi-card green">
+      <div class="kpi-label">Накоплено</div>
+      <div class="kpi-value">${fmtZ(s.totalSav)}</div>
+      <div class="kpi-sub">${pSav}% от бюджета</div>
+    </div>
+    <div class="kpi-card blue">
+      <div class="kpi-label">Оплачено</div>
+      <div class="kpi-value">${fmtZ(s.paid)}</div>
+      <div class="kpi-sub">выплачено подрядчикам</div>
+    </div>
+    <div class="kpi-card purple">
+      <div class="kpi-label">${ic('gift',12)} Подарки</div>
+      <div class="kpi-value">${fmtZ(s.giftTotal)}</div>
+      <div class="kpi-sub">вне бюджета · справочно</div>
+    </div>
+    <div class="kpi-card yellow">
+      <div class="kpi-label">${ic('lock',12)} Обязательства</div>
+      <div class="kpi-value">${fmtZ(s.obligatedRemaining)}</div>
+      <div class="kpi-sub">остаток по договорам</div>
+    </div>
+    <div class="kpi-card" style="border-top-color:${freeColor}">
+      <div class="kpi-label">Свободно</div>
+      <div class="kpi-value" style="color:${freeColor}">${fmtZ(Math.abs(s.freeAfterObligations))}</div>
+      <div class="kpi-sub">${s.freeAfterObligations<0?ic('warn',11)+' дефицит':'накоп. − обязат.'}</div>
+    </div>
+    <div class="kpi-card ${s.deficit>0?'red':'green'}">
+      <div class="kpi-label">Ещё накопить</div>
+      <div class="kpi-value">${s.deficit>0?fmtZ(s.deficit):'Хватает'}</div>
+      <div class="kpi-sub">${monthly?fmtZ(monthly)+'/мес':ic('check',11)+' покрыто'}</div>
+    </div>
+    <div class="kpi-card wide purple">
+      <div class="kpi-label">Итоговая сумма</div>
+      <div class="kpi-value" style="font-size:24px">${fmtZ(s.realBudget+s.giftTotal)}</div>
+      <div class="kpi-sub">общий бюджет + подарки</div>
+    </div>
+  </div>
+
+  <div class="prog-block">
+    <div class="prog-title">Прогресс бюджета</div>
+    ${[['Накоплено от бюджета',pSav,'#8fcfa8'],['Оплачено подрядчикам',pPaid,'#9bc4e8'],['Согласовано (договоры)',pCon,'#e6c878']].map(([l,p,c])=>`
+    <div class="prog-row">
+      <div class="prog-info"><span class="prog-name">${l}</span><span class="prog-pct" style="color:${c}">${p}%</span></div>
+      <div class="prog-bar"><div class="prog-fill" style="width:${p}%;background:${c}"></div></div>
+    </div>`).join('')}
+  </div>
+
+  <div class="section-head">По категориям</div>
+  ${catRows||'<div class="empty">Нет статей</div>'}`;
+}
+
+// ── CONTRACTORS ───────────────────────────────────────────
+function renderContractors(){
+  const cats=['Все',...new Set(state.contractors.map(c=>c.cat))];
+  const fc=state.filterCat||'Все';
+  const filtered=(fc==='Все'?state.contractors:state.contractors.filter(c=>c.cat===fc)).slice().sort((a,b)=>statusRank(a)-statusRank(b));
+  const chips=cats.map(c=>`<button class="cat-chip${fc===c?' active':''}" onclick="setFilter('${(c+'').replace(/'/g,"\\'")}')">${c}</button>`).join('');
+  const cards=filtered.length?filtered.map(renderCard).join(''):'<div class="empty">Нет статей</div>';
+
+  const activeFiltered=filtered.filter(c=>!c.isGift&&c.status!=='cancelled');
+  const total_real=activeFiltered.reduce((s,c)=>s+((c.status==='booked'||c.status==='paid')?(+c.total||0):(+c.planned||0)),0);
+  const total_paid=activeFiltered.reduce((s,c)=>s+(+c.paid||0),0);
+  const total_oblRem=activeFiltered.filter(c=>c.status==='booked'||c.status==='paid').reduce((s,c)=>s+(+c.total||0)-(+c.paid||0),0);
+  const total_planRem=activeFiltered.filter(c=>c.status==='planned').reduce((s,c)=>s+(+c.planned||0),0);
+  const total_contracted=activeFiltered.filter(c=>c.status==='booked'||c.status==='paid').reduce((s,c)=>s+(+c.total||0),0);
+  const total_gifts=filtered.filter(c=>c.isGift&&c.status!=='cancelled').reduce((s,c)=>s+((+c.paid||0)>0?(+c.paid):(+c.planned||0)),0);
+
+  return`
+  <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+    <div class="cat-filter" style="flex:1">${chips}</div>
+    <button onclick="openCatManager()" style="flex-shrink:0;display:flex;align-items:center;gap:4px;background:rgba(255,255,255,0.05);border:1px solid rgba(217,189,110,0.2);border-radius:20px;padding:5px 11px;color:var(--text3);cursor:pointer;font-size:11px;font-family:inherit;white-space:nowrap">${ic('list',13)} Катег.</button>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><div class="legend-stripe" style="background:var(--yellow)"></div>Обязательный остаток</div>
+    <div class="legend-item"><div class="legend-stripe" style="background:rgba(95,104,120,0.6)"></div>Плановая оценка</div>
+    <div class="legend-item"><div class="legend-stripe" style="background:var(--green)"></div>Оплачено</div>
+  </div>
+  ${cards}
+  <div style="background:var(--bg2);border:1px solid rgba(217,189,110,0.2);border-radius:var(--radius);padding:14px 16px;margin-top:4px">
+    <div style="font-size:9px;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:12px">Итого${fc!=='Все'?' · '+fc:''}</div>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+      <span style="font-size:11px;color:var(--text2)">Бюджет (договор / план)</span>
+      <span style="font-size:13px;font-variant-numeric:tabular-nums;color:var(--gold);font-weight:700">${fmtZ(total_real)}</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+      <span style="font-size:11px;color:var(--text2)">Договорная сумма (всего)</span>
+      <span style="font-size:13px;font-variant-numeric:tabular-nums;color:var(--blue);font-weight:700">${total_contracted?fmtZ(total_contracted):'—'}</span>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+      <span style="font-size:11px;color:var(--text2)">Оплачено</span>
+      <span style="font-size:13px;font-variant-numeric:tabular-nums;color:var(--green);font-weight:700">${fmtZ(total_paid)}</span>
+    </div>
+    <div style="padding:6px 0;border-bottom:${total_gifts?'1px solid rgba(255,255,255,0.05)':'none'}">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <span style="font-size:11px;color:var(--text2);display:flex;align-items:center;gap:4px">${ic('lock',12)} Остаток обязательный</span>
+        <span style="font-size:13px;font-variant-numeric:tabular-nums;color:var(--yellow);font-weight:700">${total_oblRem?fmtZ(total_oblRem):'—'}</span>
+      </div>
+      ${total_planRem?`<div style="display:flex;justify-content:space-between;align-items:center;margin-top:6px">
+        <span style="font-size:11px;color:var(--text3)">Остаток плановый</span>
+        <span style="font-size:12px;font-variant-numeric:tabular-nums;color:var(--text3)">~ ${fmtZ(total_planRem)}</span>
+      </div>`:''}
+    </div>
+    ${total_gifts?`<div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0">
+      <span style="font-size:11px;color:var(--purple);display:flex;align-items:center;gap:4px">${ic('gift',12)} Подарки (вне бюджета)</span>
+      <span style="font-size:12px;font-variant-numeric:tabular-nums;color:var(--purple)">${fmtZ(total_gifts)}</span>
+    </div>`:''}
+  </div>`;
+}
+
+function renderCard(c){
+  const isGift=!!c.isGift;
+  const chev=`<span style="color:var(--text3)" class="card-chevron">${ic('chevron',14)}</span>`;
+
+  if(isGift){
+    const gPaid=+c.paid||0, gPlan=+c.planned||0;
+    let gMain;
+    if(gPaid>0){
+      // оплаченный подарок — основная сумма это оплата
+      gMain=`<div class="card-amount" style="color:var(--purple)">${fmtZ(gPaid)}</div>
+             <div class="card-amount-sub" style="color:var(--purple);opacity:0.8">оплачено</div>
+             ${gPlan&&gPlan!==gPaid?`<div class="card-amount-sub" style="color:var(--text3);margin-top:3px">план ${fmtZ(gPlan)}</div>`:''}`;
+    } else if(gPlan>0){
+      gMain=`<div class="card-amount" style="color:var(--purple)">~ ${fmtZ(gPlan)}</div>
+             <div class="card-amount-sub" style="color:var(--text3);opacity:0.8">план</div>`;
+    } else { gMain=''; }
+    return`
+    <div class="contractor-card gift" onclick="openModal(${c.id})">
+      <div class="card-header">
+        <div class="card-icon" style="background:rgba(194,168,224,0.15);color:var(--purple)">${ic('gift',20)}</div>
+        <div class="card-meta">
+          <div class="card-name">${c.name}</div>
+          <div class="card-cat">${c.cat}</div>
+          <span class="status-badge" style="background:rgba(194,168,224,0.15);color:var(--purple)">${ic('gift',10)} Подарок · вне бюджета</span>
+        </div>
+        <div class="card-right">
+          ${gMain}
+          ${chev}
+        </div>
+      </div>
+    </div>`;
+  }
+
+  if(c.status==='cancelled'){
+    return`
+    <div class="contractor-card cancelled" onclick="openModal(${c.id})">
+      <div class="card-header">
+        <div class="card-icon" style="background:rgba(226,145,127,0.1);color:var(--red)">${ic('close',18)}</div>
+        <div class="card-meta">
+          <div class="card-name" style="text-decoration:line-through;color:var(--text3)">${c.name}</div>
+          <div class="card-cat">${c.cat}</div>
+          <span class="status-badge" style="background:rgba(226,145,127,0.15);color:var(--red)">Отменено · вне бюджета</span>
+        </div>
+        <div class="card-right">
+          ${+c.paid?`<div style="font-size:12px;color:var(--red);font-variant-numeric:tabular-nums">уплач. ${fmtZ(+c.paid)}</div>`:''}
+          ${chev}
+        </div>
+      </div>
+    </div>`;
+  }
+
+  const sc=STATUS[c.status]||STATUS.planned;
+  const isCommitted=(c.status==='booked'||c.status==='paid');
+  const isPaid=c.status==='paid';
+  const total=+c.total||0, paidAmt=+c.paid||0, planAmt=+c.planned||0;
+  const remainder=total-paidAmt;
+
+  let cardClass, rightBlock;
+  if(isPaid){
+    // оплачено полностью — показываем полную сумму оплаты
+    cardClass='all-paid';
+    const full=total||paidAmt||planAmt;
+    rightBlock=`
+      <div class="card-amount" style="color:var(--green)">${fmtZ(full)}</div>
+      <div class="card-amount-sub" style="color:var(--green);opacity:0.8">${ic('check',10)} оплачено</div>`;
+  } else if(isCommitted){
+    // забронировано — главное это остаток к оплате; ниже оплачено из договорной
+    cardClass='committed';
+    rightBlock=`
+      <div class="card-amount" style="color:var(--yellow)">${fmtZ(remainder)}</div>
+      <div class="card-amount-sub" style="color:var(--yellow);opacity:0.85">${ic('lock',10)} остаток</div>
+      <div class="card-amount-sub" style="color:var(--text3);margin-top:3px">опл. ${fmtZ(paidAmt)} из ${fmtZ(total)}</div>`;
+  } else {
+    // не забронировано — плановая
+    cardClass='only-planned';
+    rightBlock=`
+      <div class="card-amount" style="color:var(--text2)">~ ${fmtZ(planAmt)}</div>
+      <div class="card-amount-sub" style="color:var(--text3);opacity:0.85">план</div>`;
+  }
+
+  return`
+  <div class="contractor-card ${cardClass}" onclick="openModal(${c.id})">
+    <div class="card-header">
+      <div class="card-icon" style="background:${sc.bg};color:${sc.color}">${ic(catIcon(c.cat),20)}</div>
+      <div class="card-meta">
+        <div class="card-name">${c.name}</div>
+        <div class="card-cat">${c.cat}</div>
+        <span class="status-badge" style="background:${sc.bg};color:${sc.color}">${sc.label}</span>
+      </div>
+      <div class="card-right">
+        ${rightBlock}
+        ${chev}
+      </div>
+    </div>
+  </div>`;
+}
+
+// ── SAVINGS TAB ───────────────────────────────────────────
+function renderSavings(){
+  const s=calcStats();
+  const now=new Date();
+  const days=Math.max(1,Math.ceil((WEDDING_DATE-now)/86400000));
+  const months=(days/30).toFixed(1);
+  // эффективная дата: если сегодня день зарплаты (10/25) и накопления ещё НЕ менялись сегодня,
+  // то это поступление считается предстоящим (откатываем на день назад для расчёта)
+  let effDate=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  const isPayday=PAYDAYS.includes(now.getDate());
+  if(isPayday){
+    const lc=state.lastSavingsChange?new Date(state.lastSavingsChange):null;
+    const changedToday=lc && lc.getFullYear()===now.getFullYear() && lc.getMonth()===now.getMonth() && lc.getDate()===now.getDate();
+    if(!changedToday){ effDate=new Date(now.getFullYear(),now.getMonth(),now.getDate()-1); }
+  }
+  const sched=calcPaySchedule(effDate, WEDDING_DATE);
+  const perMonth=s.deficit>0 && sched.monthsEq>0 ? Math.ceil(s.deficit/sched.monthsEq) : (s.deficit>0?s.deficit:0);
+  const perPay=s.deficit>0 && sched.events>0 ? Math.ceil(s.deficit/sched.events) : 0;
+  const monthly=perMonth;
+  const pct=Math.min(100,Math.round(s.savedPlusPaid/(s.realBudget||1)*100));
+  const freeColor=s.freeAfterObligations>=0?'var(--green)':'var(--red)';
+
+  const savRows=(state.savingsList||[]).map((sv,i)=>{
+    const col=SAVINGS_COLORS[i%SAVINGS_COLORS.length];
+    return`<div class="sav-row">
+      <div style="display:flex;align-items:center;gap:8px;flex:1;min-width:0">
+        <span class="sav-dot" style="background:${col}"></span>
+        <span class="sav-label">${sv.label}</span>
+      </div>
+      <div class="sav-input-row">
+        <span class="sav-val" style="color:${col}">${fmtZ(sv.amount)}</span>
+        <button class="sav-edit-btn" onclick="openSavModal('${sv.id}')">${ic('edit',13)}</button>
+        <button class="sav-edit-btn" style="color:var(--red);background:rgba(226,145,127,0.12)" onclick="deleteSav('${sv.id}')">${ic('close',13)}</button>
+      </div>
+    </div>`;
+  }).join('');
+
+  const payRowTpl=(accent)=>(c)=>{
+    const rem=(+c.total||0)-(+c.paid||0);
+    return`<div style="background:rgba(${accent},0.08);border:1px solid rgba(${accent},0.15);border-radius:10px;padding:12px 14px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center">
+      <div><div style="font-size:13px;color:var(--text)">${c.name}</div><div style="font-size:10px;color:var(--text3);margin-top:2px">${c.cat}</div></div>
+      <div style="text-align:right">
+        <div style="font-size:13px;color:rgb(${accent});font-variant-numeric:tabular-nums">+${fmtZ(+c.paid)}</div>
+        ${rem>0?`<div style="font-size:10px;color:var(--yellow)">ост. ${fmtZ(rem)}</div>`:''}
+      </div>
+    </div>`;
+  };
+  const prepItems=state.contractors.filter(c=>+c.paid>0&&!c.isGift&&c.isPrepay);
+  const paidItems=state.contractors.filter(c=>+c.paid>0&&!c.isGift&&!c.isPrepay);
+  const sortByStatus=arr=>arr.slice().sort((a,b)=>statusRank(a)-statusRank(b));
+  const prepSorted=sortByStatus(prepItems), paidSorted=sortByStatus(paidItems);
+  const prepRows=prepSorted.map(payRowTpl('155,196,232')).join('')||'<div class="empty">Нет предоплат</div>';
+  const payRows=paidSorted.map(payRowTpl('143,207,168')).join('')||'<div class="empty">Нет оплат</div>';
+  const prepTotal=prepItems.reduce((x,c)=>x+(+c.paid||0),0);
+  const paidTotal=paidItems.reduce((x,c)=>x+(+c.paid||0),0);
+
+  const sectionTotal=(label,val,color)=>`<div style="display:flex;justify-content:space-between;align-items:center;padding:10px 14px 0;margin-top:2px;border-top:1px solid rgba(255,255,255,0.08)">
+    <span style="font-size:11px;color:var(--text3);letter-spacing:1px;text-transform:uppercase">${label}</span>
+    <span style="font-size:15px;font-weight:700;color:${color};font-variant-numeric:tabular-nums">${fmtZ(val)}</span>
+  </div>`;
+
+  const giftVal=c=>((+c.paid||0)>0?(+c.paid):(+c.planned||0));
+  const giftItems=sortByStatus(state.contractors.filter(c=>c.isGift&&c.status!=='cancelled'));
+  const giftTotalSav=giftItems.reduce((sv,c)=>sv+giftVal(c),0);
+  const giftRows=giftItems.map(c=>{
+    const gp=(+c.paid||0)>0;
+    return`<div style="background:rgba(194,168,224,0.08);border:1px solid rgba(194,168,224,0.15);border-radius:10px;padding:12px 14px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center">
+      <div style="min-width:0;flex:1"><div style="font-size:13px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${c.name}</div><div style="font-size:10px;color:var(--text3);margin-top:2px">${c.cat} · ${gp?'оплачено':'план'}</div></div>
+      <div style="font-size:13px;color:var(--purple);font-variant-numeric:tabular-nums;white-space:nowrap;flex-shrink:0">${giftVal(c)?fmtZ(giftVal(c)):'—'}</div>
+    </div>`;
+  }).join('');
+  const giftBlock=giftItems.length?`
+  <div class="section-head">${ic('gift',11)} Подарки · вне бюджета</div>
+  ${giftRows}
+  ${sectionTotal('Итого подарки',giftTotalSav,'var(--purple)')}`:'';
+
+  return`
+  <div class="savings-card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+      <div class="savings-title" style="margin:0">Источники накоплений</div>
+      <button onclick="openSavModal(null)" style="display:flex;align-items:center;gap:4px;background:rgba(217,189,110,0.15);border:1px solid rgba(217,189,110,0.3);border-radius:8px;padding:5px 11px;color:var(--gold);cursor:pointer;font-size:12px;font-family:inherit">${ic('plus',13)} Добавить</button>
+    </div>
+    ${savRows||'<div class="empty" style="padding:16px 0">Нет источников</div>'}
+    <div class="divider" style="margin:12px 0 8px"></div>
+    <div class="sav-row">
+      <span style="font-size:13px;color:var(--gold);font-weight:600">ИТОГО НАКОПЛЕНО</span>
+      <span class="sav-val" style="color:var(--gold);font-size:18px">${fmtZ(s.totalSav)}</span>
+    </div>
+  </div>
+
+  <div class="savings-card">
+    <div class="savings-title">Сколько нужно накопить</div>
+    <div class="need-block">
+      <div class="need-row">
+        <span class="need-label">Общий бюджет свадьбы</span>
+        <span class="need-val" style="color:var(--text)">${fmtZ(s.realBudget)}</span>
+      </div>
+      <div class="need-row">
+        <span class="need-label" style="font-size:10px;color:var(--text3)">без подарков и отменённых</span>
+        <span></span>
+      </div>
+      <div class="need-row">
+        <span class="need-label">Уже оплачено</span>
+        <span class="need-val" style="color:var(--blue)">− ${fmtZ(s.paid)}</span>
+      </div>
+      <div class="need-row">
+        <span class="need-label">Накоплено на счетах</span>
+        <span class="need-val" style="color:var(--green)">− ${fmtZ(s.totalSav)}</span>
+      </div>
+      <div class="need-row" style="padding-top:10px">
+        <span class="need-label" style="color:var(--text);font-size:13px">Ещё накопить</span>
+        <span class="need-val" style="color:${s.deficit>0?'var(--red)':'var(--green)'};font-size:16px">${s.deficit>0?fmtZ(s.deficit):'Хватает'}</span>
+      </div>
+    </div>
+    <div class="need-block">
+      <div style="font-size:9px;color:var(--text3);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px">Из накопленного зарезервировано</div>
+      <div class="need-row">
+        <span class="need-label">Накоплено</span>
+        <span class="need-val" style="color:var(--green)">${fmtZ(s.totalSav)}</span>
+      </div>
+      <div class="need-row">
+        <span class="need-label">${ic('lock',12)} Обязательства по договорам</span>
+        <span class="need-val" style="color:var(--yellow)">− ${fmtZ(s.obligatedRemaining)}</span>
+      </div>
+      <div class="need-row" style="padding-top:10px">
+        <span class="need-label" style="color:var(--text);font-size:13px">Свободно</span>
+        <span class="need-val" style="color:${freeColor};font-size:16px;white-space:nowrap;display:inline-flex;align-items:center;gap:4px">${fmtZ(Math.abs(s.freeAfterObligations))}${s.freeAfterObligations<0?ic('warn',13):''}</span>
+      </div>
+    </div>
+    <div class="prog-bar" style="height:6px;margin-top:4px">
+      <div class="prog-fill" style="width:${pct}%;background:var(--green)"></div>
+    </div>
+    <div style="text-align:right;font-size:10px;color:var(--text3);margin-top:4px">${pct}% бюджета собрано (накоп.+оплач.)</div>
+  </div>
+
+  <div class="savings-card">
+    <div class="savings-title">Нужно откладывать</div>
+    <div class="monthly-hero">
+      <div class="monthly-label">осталось ${months} мес. · ${sched.events} поступлений</div>
+      <div class="monthly-amount" style="color:${monthly>0?'var(--red)':'var(--green)'}">${monthly>0?fmtZ(monthly):'Хватает'}</div>
+      ${monthly>0?`<div class="monthly-sub">в месяц, чтобы покрыть бюджет к ${WEDDING_DATE.getDate()}.0${WEDDING_DATE.getMonth()+1}</div>`:''}
+      ${perPay>0?`<div style="font-size:12px;color:var(--text3);margin-top:12px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.06)">Отложить при поступлении<br><span style="font-size:18px;color:var(--text2);font-weight:700;font-variant-numeric:tabular-nums">${fmtZ(perPay)}</span><br><span style="font-size:10px">≈ 50% от месячной · 10 и 25 числа</span></div>`:''}
+    </div>
+  </div>
+
+  <div class="section-head">Внесённые предоплаты / авансы</div>
+  ${prepRows}
+  ${prepItems.length?sectionTotal('Итого предоплаты',prepTotal,'var(--blue)'):''}
+  <div class="section-head">Оплаты</div>
+  ${payRows}
+  ${paidItems.length?sectionTotal('Итого оплаты',paidTotal,'var(--green)'):''}
+  ${giftBlock}
+
+  <div class="section-head">${ic('source',11)} Синхронизация GitHub</div>
+  <div class="savings-card">
+    <div id="syncStatus">${renderSyncStatus()}</div>
+    <button class="btn-secondary" style="margin:10px 0 0;display:flex;align-items:center;justify-content:center;gap:8px" onclick="openSyncSettings()">${ic('edit',15)} Настройки синхронизации</button>
+  </div>
+
+  <div class="section-head">Резервная копия</div>
+  <div class="savings-card">
+    <div style="font-size:11px;color:var(--text2);line-height:1.5;margin-bottom:14px">
+      Локальный экспорт данных текстом — на случай если синхронизация не настроена.
+    </div>
+    <button class="btn-secondary" style="margin-bottom:10px;display:flex;align-items:center;justify-content:center;gap:8px" onclick="exportData()">${ic('wallet',15)} Экспорт данных</button>
+    <button class="btn-secondary" style="margin:0;display:flex;align-items:center;justify-content:center;gap:8px" onclick="openImport()">${ic('plus',15)} Импорт данных</button>
+  </div>`;
+}
+
+function renderSyncStatus(){
+  const cfg=getSyncCfg();
+  if(!cfg.token||!cfg.repo){
+    return `<div style="font-size:12px;color:var(--text3);line-height:1.5">Не настроена. Данные хранятся только на этом устройстве. Настройте синхронизацию, чтобы видеть их на всех устройствах.</div>`;
+  }
+  const last=cfg.lastSync?new Date(cfg.lastSync):null;
+  const lastTxt=last?`${last.getDate().toString().padStart(2,'0')}.${(last.getMonth()+1).toString().padStart(2,'0')} ${last.getHours().toString().padStart(2,'0')}:${last.getMinutes().toString().padStart(2,'0')}`:'—';
+  const st=syncState.status;
+  const stColor=st==='ok'?'var(--green)':st==='error'?'var(--red)':st==='syncing'?'var(--yellow)':'var(--text3)';
+  const stTxt=st==='ok'?'синхронизировано':st==='error'?('ошибка: '+(syncState.error||'')):st==='syncing'?'синхронизация…':'готово';
+  return `<div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+      <div style="min-width:0">
+        <div style="font-size:12px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${cfg.repo}</div>
+        <div style="font-size:10px;color:${stColor};margin-top:2px">${stTxt} · ${lastTxt}</div>
+      </div>
+      <button onclick="syncNow()" style="flex-shrink:0;display:flex;align-items:center;gap:5px;background:rgba(143,207,168,0.15);border:1px solid rgba(143,207,168,0.3);border-radius:8px;padding:6px 12px;color:var(--green);cursor:pointer;font-size:12px;font-family:inherit">${ic('check',13)} Синхр.</button>
+    </div>`;
+}
+
+// ── FILTER ────────────────────────────────────────────────
+function setFilter(cat){state.filterCat=cat;save(state);render();}
+function toggleCat(cat){
+  if(!state.expandedCats)state.expandedCats={};
+  state.expandedCats[cat]=!state.expandedCats[cat];
+  save(state);render();
+}
+
+// ── CONTRACTOR MODAL ──────────────────────────────────────
+function openModal(id){
+  const item=state.contractors.find(c=>c.id===id);
+  if(!item)return;
+  modalItem=clone(item);isNewItem=false;modalMode='contractor';
+  renderModal();
+  document.getElementById('modalOverlay').classList.add('open');
+}
+function openAddModal(){
+  modalItem={id:state.nextId||99,cat:'Другое',name:'Новая статья',status:'planned',planned:0,total:0,paid:0,contact:'',notes:'',date:'',isGift:false};
+  isNewItem=true;modalMode='contractor';renderModal();
+  document.getElementById('modalOverlay').classList.add('open');
+}
+function closeModal(){document.getElementById('modalOverlay').classList.remove('open');document.getElementById('modal').style.transform='';document.getElementById('modal').scrollTop=0;modalItem=null;savModalId=null;}
+function handleOverlayClick(e){if(e.target===document.getElementById('modalOverlay'))closeModal();}
+
+function renderModal(){
+  if(!modalItem)return;
+  const sc=STATUS[modalItem.status]||STATUS.planned;
+  document.getElementById('mIcon').style.color=sc.color;
+  document.getElementById('mIcon').style.background=sc.bg;
+  document.getElementById('mIcon').innerHTML=ic(catIcon(modalItem.cat),22);
+  document.getElementById('mTitleInput').value=modalItem.name;
+  document.getElementById('mTitleInput').oninput=e=>{modalItem.name=e.target.value;};
+  document.getElementById('mCat').textContent=modalItem.cat;
+
+  const statusBtns=Object.entries(STATUS).map(([k,v])=>`<button class="status-btn ${modalItem.status===k?v.cls:''}" onclick="setStatus('${k}')">${v.label}</button>`).join('');
+  const allCats=[...new Set([...Object.keys(CAT_ICON),...Object.keys(state.catIcons||{}),...state.contractors.map(c=>c.cat)])].filter(Boolean);
+
+  document.getElementById('mBody').innerHTML=`
+    <div class="field-group">
+      <label class="field-label">Статус</label>
+      <div class="status-row">${statusBtns}</div>
+    </div>
+    <div class="field-group">
+      <label class="field-label">Категория</label>
+      <select class="field-input" id="fCat" onchange="onCatSelect(this.value)">
+        ${allCats.map(c=>`<option value="${c}"${modalItem.cat===c?' selected':''}>${c}</option>`).join('')}
+        ${allCats.includes(modalItem.cat)?'':`<option value="${modalItem.cat}" selected>${modalItem.cat}</option>`}
+        <option value="__new__">+ Новая категория…</option>
+      </select>
+      <div id="fCatNewWrap" style="margin-top:8px;display:none">
+        <input class="field-input" id="fCatNew" type="text" placeholder="Название новой категории" oninput="modalItem.cat=this.value;document.getElementById('mCat').textContent=this.value||'Новая категория'">
+        <div style="font-size:9px;letter-spacing:1.5px;color:var(--text3);text-transform:uppercase;margin:10px 0 6px">Значок категории</div>
+        <div id="newCatGrid" style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px"></div>
+      </div>
+    </div>
+    <div class="amounts-summary" id="amtSummary">${buildSummaryHTML(modalItem)}</div>
+    <div class="field-row">
+      <div class="field-group">
+        <label class="field-label">Плановая сумма ₽</label>
+        <input class="field-input mono" type="text" inputmode="numeric" value="${+modalItem.planned?groupNum(modalItem.planned):''}" placeholder="0" oninput="onNumInput(this,modalItem,'planned',refreshSummary)">
+      </div>
+      <div class="field-group">
+        <label class="field-label">Договорная сумма ₽</label>
+        <input class="field-input mono" type="text" inputmode="numeric" value="${+modalItem.total?groupNum(modalItem.total):''}" placeholder="0" oninput="onNumInput(this,modalItem,'total',autoOnAmounts)">
+      </div>
+    </div>
+    <div class="field-row">
+      <div class="field-group">
+        <label class="field-label">Оплачено ₽</label>
+        <input class="field-input mono" type="text" inputmode="numeric" value="${+modalItem.paid?groupNum(modalItem.paid):''}" placeholder="0" oninput="onNumInput(this,modalItem,'paid',autoOnAmounts)">
+      </div>
+      <div class="field-group">
+        <label class="field-label">Дата / срок</label>
+        <input class="field-input" type="date" value="${dmyToIso(modalItem.date)}" oninput="modalItem.date=isoToDmy(this.value)" style="font-family:inherit">
+      </div>
+    </div>
+    <div class="field-group">
+      <label style="display:flex;align-items:center;gap:12px;background:rgba(155,196,232,0.07);border:1px solid rgba(155,196,232,${modalItem.isPrepay?'0.4':'0.18'});border-radius:12px;padding:12px 14px;cursor:pointer">
+        <input type="checkbox" id="fPrepay" ${modalItem.isPrepay?'checked':''} style="width:18px;height:18px;accent-color:#9bc4e8;cursor:pointer;flex-shrink:0" onchange="modalItem.isPrepay=this.checked;modalItem._prepayTouched=true">
+        <div>
+          <div style="font-size:13px;color:var(--blue)">Аванс / предоплата</div>
+          <div style="font-size:10px;color:var(--text3);margin-top:2px">Оплаченная сумма — частичная. Без галочки — полная оплата</div>
+        </div>
+      </label>
+    </div>
+    <div class="field-group">
+      <label class="field-label">Контакт / подрядчик</label>
+      <input class="field-input" type="text" value="${modalItem.contact||''}" placeholder="Имя, телефон, ник" oninput="modalItem.contact=this.value">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Заметки</label>
+      <textarea class="field-input" rows="3" style="resize:none" placeholder="Условия, детали, ссылки..." oninput="modalItem.notes=this.value">${modalItem.notes||''}</textarea>
+    </div>
+    <div class="field-group">
+      <label style="display:flex;align-items:center;gap:14px;background:rgba(194,168,224,0.07);border:1px solid rgba(194,168,224,${modalItem.isGift?'0.4':'0.18'});border-radius:12px;padding:14px 16px;cursor:pointer">
+        <input type="checkbox" id="fIsGift" ${modalItem.isGift?'checked':''} style="width:18px;height:18px;accent-color:#c2a8e0;cursor:pointer;flex-shrink:0" onchange="modalItem.isGift=this.checked">
+        <div style="display:flex;align-items:center;gap:10px">
+          <span style="color:var(--purple);display:inline-flex">${ic('gift',20)}</span>
+          <div>
+            <div style="font-size:13px;color:var(--purple);letter-spacing:0.3px">Это подарок</div>
+            <div style="font-size:10px;color:var(--text3);margin-top:2px">Не учитывается в бюджете и накоплениях</div>
+          </div>
+        </div>
+      </label>
+    </div>
+    <button class="btn-primary" onclick="saveModal()">${ic('check',16,'#181c24')} Сохранить</button>
+    <button class="btn-secondary" onclick="closeModal()">Отмена</button>
+    ${!isNewItem?`<button class="btn-danger" onclick="deleteItem(${modalItem.id})">${ic('close',15)} Удалить статью</button>`:''}
+  `;
+}
+
+function buildSummaryHTML(item){
+  const remainder=(+item.total||0)-(+item.paid||0);
+  return`
+    <div class="amt-row"><span class="amt-label">Плановая сумма</span><span class="amt-val" style="color:var(--gold)">${fmtZ(+item.planned)}</span></div>
+    <div class="amt-row"><span class="amt-label">Договорная сумма</span><span class="amt-val">${fmt(+item.total)}</span></div>
+    <div class="amt-row"><span class="amt-label">Оплачено</span><span class="amt-val" style="color:var(--green)">${fmt(+item.paid)}</span></div>
+    <div class="amt-row"><span class="amt-label">Остаток к оплате</span><span class="amt-val" style="color:${remainder>0?'var(--yellow)':'var(--green)'}">${remainder>0?fmtZ(remainder):'—'}</span></div>`;
+}
+function refreshSummary(){const el=document.getElementById('amtSummary');if(el)el.innerHTML=buildSummaryHTML(modalItem);}
+
+let newCatIcon='pin';
+function onCatSelect(val){
+  const wrap=document.getElementById('fCatNewWrap');
+  if(val==='__new__'){
+    wrap.style.display='block';
+    document.getElementById('fCatNew').value='';
+    modalItem.cat='';
+    newCatIcon='pin';
+    renderNewCatGrid();
+    document.getElementById('fCatNew').focus();
+    document.getElementById('mCat').textContent='Новая категория';
+    document.getElementById('mIcon').innerHTML=ic('pin',22);
+  } else {
+    wrap.style.display='none';
+    modalItem.cat=val;
+    document.getElementById('mCat').textContent=val;
+    document.getElementById('mIcon').innerHTML=ic(catIcon(val),22);
+  }
+}
+function renderNewCatGrid(){
+  const g=document.getElementById('newCatGrid');
+  if(!g)return;
+  g.innerHTML=PICKABLE_ICONS.map(o=>`<button onclick="pickNewCatIcon('${o}')" style="aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:10px;cursor:pointer;font-family:inherit;border:1px solid ${newCatIcon===o?'var(--gold)':'rgba(217,189,110,0.15)'};background:${newCatIcon===o?'rgba(217,189,110,0.2)':'var(--bg3)'};color:${newCatIcon===o?'var(--gold)':'var(--text2)'}">${ic(o,18)}</button>`).join('');
+}
+function pickNewCatIcon(o){
+  newCatIcon=o;
+  renderNewCatGrid();
+  document.getElementById('mIcon').innerHTML=ic(o,22);
+}
+function applyStatusUI(k){
+  const sc=STATUS[k];
+  document.getElementById('mIcon').style.background=sc.bg;
+  document.getElementById('mIcon').style.color=sc.color;
+  document.querySelectorAll('.status-btn').forEach((b,i)=>{
+    const key=Object.keys(STATUS)[i];
+    b.className='status-btn'+(key===k?' '+sc.cls:'');
+  });
+}
+function setStatus(k){
+  modalItem.status=k;
+  modalItem._statusTouched=true;
+  applyStatusUI(k);
+}
+function autoOnAmounts(){
+  const t=+modalItem.total||0,p=+modalItem.paid||0;
+  // авто-статус: договорная введена → Забронировано; оплачено = договорной → Оплачено
+  if(!modalItem._statusTouched && modalItem.status!=='cancelled'){
+    let ns;
+    if(t>0&&p>=t)ns='paid';
+    else if(t>0)ns='booked';
+    else ns='planned';
+    if(ns!==modalItem.status){modalItem.status=ns;applyStatusUI(ns);}
+  }
+  // авто-предоплата: 0 < оплачено < договорной → аванс
+  if(!modalItem._prepayTouched){
+    const np=(t>0&&p>0&&p<t);
+    if(modalItem.isPrepay!==np){
+      modalItem.isPrepay=np;
+      const cb=document.getElementById('fPrepay');if(cb)cb.checked=np;
+    }
+  }
+  refreshSummary();
+}
+
+function saveModal(){
+  if(!modalItem)return;
+  modalItem.name=document.getElementById('mTitleInput').value||modalItem.name;
+  // новая категория из окна статьи → в общий свод со значком
+  const ncWrap=document.getElementById('fCatNewWrap');
+  if(ncWrap && ncWrap.style.display!=='none' && modalItem.cat && modalItem.cat.trim()){
+    if(!state.catIcons)state.catIcons={};
+    state.catIcons[modalItem.cat.trim()]=newCatIcon;
+    modalItem.cat=modalItem.cat.trim();
+  }
+  delete modalItem._statusTouched;
+  delete modalItem._prepayTouched;
+  if(isNewItem){state.contractors.push(modalItem);state.nextId=(state.nextId||16)+1;}
+  else{const idx=state.contractors.findIndex(c=>c.id===modalItem.id);if(idx>=0)state.contractors[idx]=modalItem;}
+  save(state);closeModal();render();showToast('Сохранено');
+}
+function deleteItem(id){
+  document.getElementById('mCat').textContent='Подтвердите удаление';
+  document.getElementById('mBody').innerHTML=`
+    <div style="font-size:13px;color:var(--text);line-height:1.5;margin-bottom:16px">Удалить эту статью? Действие необратимо.</div>
+    <button class="btn-danger" style="margin-bottom:10px" onclick="doDeleteItem(${id})">${ic('close',15)} Да, удалить</button>
+    <button class="btn-secondary" onclick="openModal(${id})">Отмена</button>
+  `;
+}
+function doDeleteItem(id){
+  state.contractors=state.contractors.filter(c=>c.id!==id);
+  save(state);closeModal();render();showToast('Удалено');
+}
+
+// ── SAVINGS MODAL ─────────────────────────────────────────
+function openSavModal(id){
+  savModalId=id;modalMode='saving';
+  const sv=id?state.savingsList.find(s=>s.id===id):null;
+  document.getElementById('mIcon').innerHTML=ic('source',22);
+  document.getElementById('mIcon').style.color='var(--gold)';
+  document.getElementById('mIcon').style.background='rgba(217,189,110,0.15)';
+  document.getElementById('mTitleInput').value=sv?sv.label:'Новый источник';
+  document.getElementById('mTitleInput').oninput=()=>{};
+  document.getElementById('mCat').textContent='Источник накоплений';
+  document.getElementById('mBody').innerHTML=`
+    <div class="field-group">
+      <label class="field-label">Название источника</label>
+      <input class="field-input" id="savLabel" type="text" value="${sv?sv.label:'Новый источник'}" placeholder="Счёт, вклад, наличные...">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Сумма ₽</label>
+      <input class="field-input mono" id="savAmount" type="text" inputmode="numeric" value="${sv&&sv.amount?groupNum(sv.amount):''}" placeholder="0" oninput="this.value=groupNum(this.value)">
+    </div>
+    <button class="btn-primary" onclick="saveSavModal()">${ic('check',16,'#181c24')} Сохранить</button>
+    <button class="btn-secondary" onclick="closeModal()">Отмена</button>
+    ${id?`<button class="btn-danger" onclick="deleteSav('${id}')">${ic('close',15)} Удалить источник</button>`:''}
+  `;
+  document.getElementById('modalOverlay').classList.add('open');
+}
+function saveSavModal(){
+  const label=document.getElementById('savLabel').value.trim()||'Источник';
+  const amount=rawNum(document.getElementById('savAmount').value);
+  let changed=false;
+  if(savModalId){const sv=state.savingsList.find(s=>s.id===savModalId);if(sv){if(sv.amount!==amount)changed=true;sv.label=label;sv.amount=amount;}}
+  else{const newId='s'+(state.nextSavId||10);state.nextSavId=(state.nextSavId||10)+1;state.savingsList.push({id:newId,label,amount});changed=true;}
+  if(changed)state.lastSavingsChange=new Date().toISOString();
+  save(state);closeModal();render();showToast('Сохранено');
+}
+function deleteSav(id){
+  const sv=state.savingsList.find(s=>s.id===id);
+  const nm=sv?sv.label:'источник';
+  document.getElementById('mCat').textContent='Подтвердите удаление';
+  document.getElementById('mBody').innerHTML=`
+    <div style="font-size:13px;color:var(--text);line-height:1.5;margin-bottom:16px">Удалить источник «${nm}»?</div>
+    <button class="btn-danger" style="margin-bottom:10px" onclick="doDeleteSav('${id}')">${ic('close',15)} Да, удалить</button>
+    <button class="btn-secondary" onclick="openSavModal('${id}')">Отмена</button>
+  `;
+}
+function doDeleteSav(id){
+  state.savingsList=state.savingsList.filter(s=>s.id!==id);
+  save(state);closeModal();render();showToast('Удалено');
+}
+
+// ── CATEGORY MANAGEMENT ───────────────────────────────────
+function openCatManager(){
+  modalMode='catmanager';
+  const cats=[...new Set([...state.contractors.map(c=>c.cat),...Object.keys(state.catIcons||{}),...Object.keys(CAT_ICON)])].filter(Boolean);
+  document.getElementById('mIcon').innerHTML=ic('list',22);
+  document.getElementById('mIcon').style.color='var(--gold)';
+  document.getElementById('mIcon').style.background='rgba(217,189,110,0.15)';
+  document.getElementById('mTitleInput').value='Категории';
+  document.getElementById('mTitleInput').oninput=()=>{};
+  document.getElementById('mCat').textContent='Управление категориями';
+  const rows=cats.map((cat,i)=>{
+    const count=state.contractors.filter(c=>c.cat===cat).length;
+    return`<div style="display:flex;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,0.05)">
+      <span style="color:var(--gold);display:inline-flex">${ic(catIcon(cat),18)}</span>
+      <span style="flex:1;font-size:14px;color:var(--text)">${cat}</span>
+      <span style="font-size:11px;color:var(--text3)">${count}</span>
+      <button onclick="editCategory(${i})" class="sav-edit-btn">${ic('edit',13)}</button>
+    </div>`;
+  }).join('');
+  window.__catList=cats;
+  document.getElementById('mBody').innerHTML=`
+    <div>${rows||'<div class="empty">Нет категорий</div>'}</div>
+    <button class="btn-primary" style="margin-top:14px" onclick="addCategory()">${ic('plus',15,'#181c24')} Новая категория</button>
+    <button class="btn-secondary" onclick="closeModal()">Закрыть</button>
+  `;
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+let catEditOld=null, catEditIcon='pin';
+function editCategory(idx){
+  const cat=(window.__catList||[])[idx];
+  if(cat==null)return;
+  catEditOld=cat; catEditIcon=catIcon(cat);
+  renderCatEditor(cat,false);
+}
+function addCategory(){
+  catEditOld=null; catEditIcon='pin';
+  renderCatEditor('',true);
+}
+function renderCatEditor(name,isNew){
+  modalMode='cateditor';
+  document.getElementById('mIcon').innerHTML=ic(catEditIcon,22);
+  document.getElementById('mIcon').style.color='var(--gold)';
+  document.getElementById('mIcon').style.background='rgba(217,189,110,0.15)';
+  document.getElementById('mTitleInput').value=isNew?'Новая категория':'Категория';
+  document.getElementById('mTitleInput').oninput=()=>{};
+  document.getElementById('mCat').textContent=isNew?'Добавление':'Изменение категории';
+  const count=catEditOld?state.contractors.filter(c=>c.cat===catEditOld).length:0;
+  const grid=PICKABLE_ICONS.map(ico=>`
+    <button onclick="pickCatIcon('${ico}')" style="aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:10px;cursor:pointer;font-family:inherit;border:1px solid ${catEditIcon===ico?'var(--gold)':'rgba(217,189,110,0.15)'};background:${catEditIcon===ico?'rgba(217,189,110,0.2)':'var(--bg3)'};color:${catEditIcon===ico?'var(--gold)':'var(--text2)'}">${ic(ico,20)}</button>
+  `).join('');
+  document.getElementById('mBody').innerHTML=`
+    <div class="field-group">
+      <label class="field-label">Название категории</label>
+      <input class="field-input" id="catNameInput" type="text" value="${(name||'').replace(/"/g,'&quot;')}" placeholder="Например: Фото">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Значок</label>
+      <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:8px">${grid}</div>
+    </div>
+    <button class="btn-primary" onclick="saveCategory(${isNew})">${ic('check',16,'#181c24')} Сохранить</button>
+    <button class="btn-secondary" onclick="openCatManager()">Назад</button>
+    ${(!isNew&&catEditOld)?`<button class="btn-danger" onclick="confirmDeleteCategory()">${ic('close',15)} Удалить${count?' ('+count+' стат. → Другое)':''}</button>`:''}
+  `;
+}
+function pickCatIcon(ico){catEditIcon=ico;
+  const name=document.getElementById('catNameInput').value;
+  renderCatEditor(name,catEditOld==null);
+}
+function saveCategory(isNew){
+  const newName=document.getElementById('catNameInput').value.trim();
+  if(!newName){showToast('Введите название');return;}
+  if(!state.catIcons)state.catIcons={};
+  if(isNew){
+    state.catIcons[newName]=catEditIcon;
+    // создаём пустую категорию через статью-заглушку? нет — просто сохраняем иконку,
+    // категория появится при назначении. Но чтобы была видна — добавим в список через catIcons.
+  } else {
+    if(newName!==catEditOld){
+      state.contractors.forEach(c=>{if(c.cat===catEditOld)c.cat=newName;});
+      if(state.filterCat===catEditOld)state.filterCat=newName;
+      // перенос иконки
+      delete state.catIcons[catEditOld];
+    }
+    state.catIcons[newName]=catEditIcon;
+  }
+  save(state);closeModal();render();showToast('Сохранено');
+}
+function confirmDeleteCategory(){
+  const cat=catEditOld; if(!cat)return;
+  const count=state.contractors.filter(c=>c.cat===cat).length;
+  // инлайн-подтверждение без confirm()
+  document.getElementById('mCat').textContent='Подтвердите удаление';
+  document.getElementById('mBody').innerHTML=`
+    <div style="font-size:13px;color:var(--text);line-height:1.5;margin-bottom:8px">Удалить категорию «${cat}»?</div>
+    <div style="font-size:12px;color:var(--text3);line-height:1.5;margin-bottom:16px">${count?count+' статей будут перенесены в «Другое».':'Категория пустая.'}</div>
+    <button class="btn-danger" style="margin-bottom:10px" onclick="doDeleteCategory()">${ic('close',15)} Да, удалить</button>
+    <button class="btn-secondary" onclick="editCategory((window.__catList||[]).indexOf('${cat.replace(/'/g,"\\'")}'))">Отмена</button>
+  `;
+}
+function doDeleteCategory(){
+  const cat=catEditOld; if(!cat)return;
+  state.contractors.forEach(c=>{if(c.cat===cat)c.cat='Другое';});
+  if(state.filterCat===cat)state.filterCat='Все';
+  if(state.catIcons)delete state.catIcons[cat];
+  save(state);closeModal();render();showToast('Категория удалена');
+}
+
+// ── EXPORT / IMPORT ───────────────────────────────────────
+function exportData(){
+  const json=JSON.stringify(state);
+  modalMode='export';
+  document.getElementById('mIcon').innerHTML=ic('wallet',22);
+  document.getElementById('mIcon').style.color='var(--gold)';
+  document.getElementById('mIcon').style.background='rgba(217,189,110,0.15)';
+  document.getElementById('mTitleInput').value='Экспорт';
+  document.getElementById('mTitleInput').oninput=()=>{};
+  document.getElementById('mCat').textContent='Резервная копия данных';
+  document.getElementById('mBody').innerHTML=`
+    <div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:12px">
+      Скопируйте текст ниже и сохраните в надёжном месте — заметки, почта, облако. Это и есть полная резервная копия.
+    </div>
+    <textarea class="field-input mono" id="exportText" rows="8" style="resize:none;font-size:11px;line-height:1.4" readonly onclick="this.select()">${json.replace(/</g,'&lt;')}</textarea>
+    <button class="btn-primary" style="margin-top:14px" onclick="copyExport()">${ic('check',16,'#181c24')} Скопировать</button>
+    <button class="btn-secondary" onclick="closeModal()">Закрыть</button>
+  `;
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+function copyExport(){
+  const ta=document.getElementById('exportText');
+  ta.select();ta.setSelectionRange(0,99999);
+  let ok=false;
+  try{ok=document.execCommand('copy');}catch(e){}
+  if(!ok && navigator.clipboard){navigator.clipboard.writeText(ta.value).then(()=>showToast('Скопировано'));}
+  else showToast(ok?'Скопировано':'Выделите и скопируйте вручную');
+}
+
+function openImport(){
+  modalMode='import';
+  document.getElementById('mIcon').innerHTML=ic('plus',22);
+  document.getElementById('mIcon').style.color='var(--gold)';
+  document.getElementById('mIcon').style.background='rgba(217,189,110,0.15)';
+  document.getElementById('mTitleInput').value='Импорт';
+  document.getElementById('mTitleInput').oninput=()=>{};
+  document.getElementById('mCat').textContent='Восстановление из копии';
+  document.getElementById('mBody').innerHTML=`
+    <div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:12px">
+      Вставьте текст резервной копии. Текущие данные будут заменены.
+    </div>
+    <textarea class="field-input mono" id="importText" rows="8" style="resize:none;font-size:11px;line-height:1.4" placeholder="Вставьте текст копии сюда..."></textarea>
+    <button class="btn-primary" style="margin-top:14px" onclick="doImport()">${ic('check',16,'#181c24')} Загрузить</button>
+    <button class="btn-secondary" onclick="closeModal()">Отмена</button>
+  `;
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+function doImport(){
+  const txt=document.getElementById('importText').value.trim();
+  if(!txt){showToast('Вставьте текст копии');return;}
+  let parsed;
+  try{parsed=JSON.parse(txt);}catch(e){showToast('Текст повреждён');return;}
+  if(!parsed||!Array.isArray(parsed.contractors)){showToast('В копии нет данных');return;}
+  window.__importParsed=parsed;
+  document.getElementById('mCat').textContent='Подтвердите импорт';
+  document.getElementById('mBody').innerHTML=`
+    <div style="font-size:13px;color:var(--text);line-height:1.5;margin-bottom:8px">Заменить все текущие данные?</div>
+    <div style="font-size:12px;color:var(--text3);line-height:1.5;margin-bottom:16px">В копии: ${parsed.contractors.length} статей, ${(parsed.savingsList||[]).length} источников. Текущие данные будут перезаписаны.</div>
+    <button class="btn-danger" style="margin-bottom:10px" onclick="doImportConfirm()">${ic('check',15)} Да, заменить</button>
+    <button class="btn-secondary" onclick="openImport()">Отмена</button>
+  `;
+}
+function doImportConfirm(){
+  const parsed=window.__importParsed; if(!parsed)return;
+  state=Object.assign(clone(DEFAULT_DATA),parsed);
+  if(!Array.isArray(state.savingsList))state.savingsList=clone(DEFAULT_DATA.savingsList);
+  state=normalizeData(state);
+  save(state);closeModal();switchTab('dashboard');showToast('Данные загружены');
+}
+
+// ── GITHUB SYNC ───────────────────────────────────────────
+// Конфиг синхронизации хранится отдельно от данных (НЕ попадает в экспорт)
+const SYNC_KEY='wedding_sync_cfg';
+const DATA_PATH='wedding-data.json';
+let syncState={status:'idle', error:'', sha:null, timer:null, pulling:false};
+
+function getSyncCfg(){
+  try{return JSON.parse(localStorage.getItem(SYNC_KEY))||{};}catch(e){return {};}
+}
+function setSyncCfg(c){localStorage.setItem(SYNC_KEY,JSON.stringify(c));}
+
+function ghHeaders(token){
+  return {'Authorization':'Bearer '+token,'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'};
+}
+
+// GET текущего файла данных (вернёт {content, sha} или null если файла ещё нет)
+async function ghGet(cfg){
+  const url=`https://api.github.com/repos/${cfg.repo}/contents/${DATA_PATH}?ref=${cfg.branch||'main'}`;
+  const r=await fetch(url,{headers:ghHeaders(cfg.token)});
+  if(r.status===404)return null;
+  if(!r.ok)throw new Error('GET '+r.status);
+  const j=await r.json();
+  const content=decodeURIComponent(escape(atob(j.content.replace(/\n/g,''))));
+  return {content, sha:j.sha};
+}
+
+// PUT (создать/обновить) файл данных
+async function ghPut(cfg, jsonStr, sha){
+  const url=`https://api.github.com/repos/${cfg.repo}/contents/${DATA_PATH}`;
+  const body={
+    message:'update wedding data '+new Date().toISOString(),
+    content:btoa(unescape(encodeURIComponent(jsonStr))),
+    branch:cfg.branch||'main'
+  };
+  if(sha)body.sha=sha;
+  const r=await fetch(url,{method:'PUT',headers:ghHeaders(cfg.token),body:JSON.stringify(body)});
+  if(!r.ok){
+    const t=await r.text();
+    throw new Error('PUT '+r.status+(r.status===409?' (конфликт)':''));
+  }
+  const j=await r.json();
+  return j.content.sha;
+}
+
+// Проверка доступа к репозиторию
+async function ghTest(cfg){
+  const url=`https://api.github.com/repos/${cfg.repo}`;
+  const r=await fetch(url,{headers:ghHeaders(cfg.token)});
+  if(r.status===401)throw new Error('неверный токен');
+  if(r.status===404)throw new Error('репозиторий не найден или нет доступа');
+  if(!r.ok)throw new Error('ошибка '+r.status);
+  const j=await r.json();
+  return j.permissions&&j.permissions.push;
+}
+
+// Загрузка данных из GitHub при старте (pull). Если на сервере новее — применяем.
+async function syncPull(){
+  const cfg=getSyncCfg();
+  if(!cfg.token||!cfg.repo)return;
+  syncState.pulling=true; setSyncStatus('syncing');
+  try{
+    const res=await ghGet(cfg);
+    if(res){
+      syncState.sha=res.sha;
+      const remote=JSON.parse(res.content);
+      // применяем удалённые данные, если они есть
+      if(remote&&Array.isArray(remote.contractors)){
+        state=normalizeData(Object.assign(clone(DEFAULT_DATA),remote));
+        localStorage.setItem('wedding2026',JSON.stringify(state));
+        if(typeof render==='function')render();
+      }
+    }
+    cfg.lastSync=new Date().toISOString(); setSyncCfg(cfg);
+    setSyncStatus('ok');
+  }catch(e){
+    setSyncStatus('error', e.message);
+  }
+  syncState.pulling=false;
+}
+
+// Отправка данных в GitHub (push) с защитой от конфликтов
+async function syncPush(){
+  const cfg=getSyncCfg();
+  if(!cfg.token||!cfg.repo)return;
+  setSyncStatus('syncing');
+  try{
+    // сначала узнаём актуальный sha (вдруг другое устройство обновило)
+    let sha=syncState.sha;
+    try{const cur=await ghGet(cfg); sha=cur?cur.sha:null;}catch(e){}
+    const newSha=await ghPut(cfg, JSON.stringify(state), sha);
+    syncState.sha=newSha;
+    cfg.lastSync=new Date().toISOString(); setSyncCfg(cfg);
+    setSyncStatus('ok');
+  }catch(e){
+    setSyncStatus('error', e.message);
+  }
+}
+
+function setSyncStatus(st, err){
+  syncState.status=st; syncState.error=err||'';
+  const el=document.getElementById('syncStatus');
+  if(el)el.innerHTML=renderSyncStatus();
+}
+
+// Ручная синхронизация: pull + push
+async function syncNow(){
+  const cfg=getSyncCfg();
+  if(!cfg.token||!cfg.repo){openSyncSettings();return;}
+  await syncPush();
+  showToast(syncState.status==='ok'?'Синхронизировано':'Ошибка синхронизации');
+}
+
+// Автосохранение в GitHub с задержкой (debounce) — вызывается после save()
+function scheduleSync(){
+  const cfg=getSyncCfg();
+  if(!cfg.token||!cfg.repo||syncState.pulling)return;
+  if(syncState.timer)clearTimeout(syncState.timer);
+  syncState.timer=setTimeout(()=>{syncPush();},2500);
+}
+
+// ── НАСТРОЙКИ СИНХРОНИЗАЦИИ (модалка) ──
+function openSyncSettings(){
+  const cfg=getSyncCfg();
+  modalMode='sync';
+  document.getElementById('mIcon').innerHTML=ic('source',22);
+  document.getElementById('mIcon').style.color='var(--gold)';
+  document.getElementById('mIcon').style.background='rgba(217,189,110,0.15)';
+  document.getElementById('mTitleInput').value='Синхронизация';
+  document.getElementById('mTitleInput').oninput=()=>{};
+  document.getElementById('mCat').textContent='GitHub';
+  document.getElementById('mBody').innerHTML=`
+    <div style="font-size:12px;color:var(--text2);line-height:1.5;margin-bottom:14px">
+      Данные будут храниться в файле <b>${DATA_PATH}</b> в вашем репозитории и синхронизироваться между всеми устройствами. Токен хранится только на этом устройстве.
+    </div>
+    <div class="field-group">
+      <label class="field-label">Репозиторий (логин/название)</label>
+      <input class="field-input" id="syncRepo" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" value="${cfg.repo||''}" placeholder="username/wedding">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Ветка</label>
+      <input class="field-input" id="syncBranch" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" value="${cfg.branch||'main'}" placeholder="main">
+    </div>
+    <div class="field-group">
+      <label class="field-label">Токен доступа (Personal Access Token)</label>
+      <input class="field-input" id="syncToken" type="password" autocapitalize="off" autocorrect="off" spellcheck="false" value="${cfg.token||''}" placeholder="github_pat_...">
+      <div style="font-size:10px;color:var(--text3);margin-top:6px;line-height:1.5">
+        Создать: GitHub → Settings → Developer settings → Fine-grained tokens. Доступ: только нужный репозиторий, право <b>Contents: Read and write</b>. Инструкция в README.
+      </div>
+    </div>
+    <button class="btn-primary" onclick="saveSyncSettings()">${ic('check',16,'#181c24')} Подключить и загрузить</button>
+    <button class="btn-secondary" onclick="closeModal()">Отмена</button>
+    ${cfg.token?`<button class="btn-danger" onclick="disconnectSync()">${ic('close',15)} Отключить синхронизацию</button>`:''}
+  `;
+  document.getElementById('modalOverlay').classList.add('open');
+}
+
+async function saveSyncSettings(){
+  const repo=document.getElementById('syncRepo').value.trim().replace(/^https?:\/\/github\.com\//,'').replace(/\.git$/,'');
+  const branch=document.getElementById('syncBranch').value.trim()||'main';
+  const token=document.getElementById('syncToken').value.trim();
+  if(!repo||!token){showToast('Заполните репозиторий и токен');return;}
+  if(!/^[\w.-]+\/[\w.-]+$/.test(repo)){showToast('Формат: логин/репозиторий');return;}
+  const cfg={repo,branch,token,lastSync:null};
+  setSyncStatus('syncing');
+  try{
+    const canPush=await ghTest(cfg);
+    if(!canPush){setSyncStatus('error','нет прав на запись');showToast('Токен без права записи');return;}
+    setSyncCfg(cfg);
+    // тянем данные с сервера; если их нет — заливаем текущие
+    const res=await ghGet(cfg);
+    if(res){
+      syncState.sha=res.sha;
+      const remote=JSON.parse(res.content);
+      if(remote&&Array.isArray(remote.contractors)){
+        // на сервере уже есть данные — спрашиваем что делать
+        closeModal();
+        openSyncMergeChoice(remote);
+        return;
+      }
+    }
+    // на сервере пусто — заливаем локальные
+    await syncPush();
+    closeModal();render();
+    showToast('Синхронизация подключена');
+  }catch(e){
+    setSyncStatus('error', e.message);
+    showToast('Ошибка: '+e.message);
+  }
+}
+
+// Выбор при конфликте: на сервере уже есть данные
+function openSyncMergeChoice(remote){
+  modalMode='syncmerge';
+  document.getElementById('mIcon').innerHTML=ic('warn',22);
+  document.getElementById('mIcon').style.color='var(--yellow)';
+  document.getElementById('mIcon').style.background='rgba(230,200,120,0.15)';
+  document.getElementById('mTitleInput').value='Данные найдены';
+  document.getElementById('mTitleInput').oninput=()=>{};
+  document.getElementById('mCat').textContent='Выбор источника';
+  window.__remoteData=remote;
+  const rc=Array.isArray(remote.contractors)?remote.contractors.length:0;
+  const lc=state.contractors.length;
+  document.getElementById('mBody').innerHTML=`
+    <div style="font-size:13px;color:var(--text);line-height:1.5;margin-bottom:8px">В репозитории уже есть сохранённые данные.</div>
+    <div style="font-size:12px;color:var(--text3);line-height:1.6;margin-bottom:16px">На сервере: ${rc} статей · На этом устройстве: ${lc} статей. Что использовать?</div>
+    <button class="btn-primary" onclick="syncUseRemote()">${ic('source',15,'#181c24')} Загрузить из GitHub (заменить локальные)</button>
+    <button class="btn-secondary" onclick="syncUseLocal()">${ic('wallet',15)} Залить локальные в GitHub (заменить на сервере)</button>
+    <button class="btn-secondary" onclick="closeModal()">Отмена</button>
+  `;
+  document.getElementById('modalOverlay').classList.add('open');
+}
+async function syncUseRemote(){
+  const remote=window.__remoteData;
+  state=normalizeData(Object.assign(clone(DEFAULT_DATA),remote));
+  localStorage.setItem('wedding2026',JSON.stringify(state));
+  const cfg=getSyncCfg();cfg.lastSync=new Date().toISOString();setSyncCfg(cfg);
+  setSyncStatus('ok');closeModal();switchTab('dashboard');showToast('Загружено из GitHub');
+}
+async function syncUseLocal(){
+  await syncPush();
+  closeModal();render();showToast('Залито в GitHub');
+}
+
+function disconnectSync(){
+  localStorage.removeItem(SYNC_KEY);
+  syncState={status:'idle',error:'',sha:null,timer:null,pulling:false};
+  closeModal();render();showToast('Синхронизация отключена');
+}
+
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),1800);
+}
+
+// ── SWIPE TO CLOSE MODAL ──────────────────────────────────
+(function(){
+  const modal=document.getElementById('modal');
+  const grab=document.getElementById('modalGrab');
+  let startY=0, curY=0, dragging=false, fromGrab=false;
+
+  function start(e){
+    const t=e.touches?e.touches[0]:e;
+    startY=t.clientY; curY=0;
+    // тянуть можно либо за «ручку», либо когда контент проскроллен в самый верх
+    fromGrab=(e.currentTarget===grab);
+    if(fromGrab || modal.scrollTop<=0){
+      dragging=true;
+      modal.classList.add('dragging');
+    }
+  }
+  function move(e){
+    if(!dragging)return;
+    const t=e.touches?e.touches[0]:e;
+    const dy=t.clientY-startY;
+    // если тянем вниз — двигаем окно; вверх — отдаём прокрутке
+    if(dy>0 && (fromGrab || modal.scrollTop<=0)){
+      curY=dy;
+      modal.style.transform='translateY('+dy+'px)';
+      if(e.cancelable)e.preventDefault();
+    } else {
+      // ушли в обычный скролл — прекращаем перетаскивание
+      dragging=false;
+      modal.classList.remove('dragging');
+      modal.style.transform='';
+    }
+  }
+  function end(){
+    if(!dragging)return;
+    dragging=false;
+    modal.classList.remove('dragging');
+    modal.style.transform='';
+    if(curY>110){ closeModal(); }
+    curY=0;
+  }
+
+  grab.addEventListener('touchstart',start,{passive:true});
+  modal.addEventListener('touchstart',start,{passive:true});
+  modal.addEventListener('touchmove',move,{passive:false});
+  modal.addEventListener('touchend',end);
+  modal.addEventListener('touchcancel',end);
+})();
+
+// ── INIT ──────────────────────────────────────────────────
+renderTabs();
+updateDays();
+switchTab(currentTab);
+document.getElementById('fabBtn').style.display=currentTab==='contractors'?'flex':'none';
+// при старте — подтянуть данные из GitHub, если синхронизация настроена
+if(typeof syncPull==='function'){ syncPull(); }
+</script>
+<script>
+if('serviceWorker' in navigator){
+  window.addEventListener('load',function(){
+    navigator.serviceWorker.register('sw.js').catch(function(){});
+  });
+}
+</script>
+</body>
+</html>
